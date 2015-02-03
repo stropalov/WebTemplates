@@ -1,0 +1,131 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12pt;
+	color: #FFFFFF;
+	background-color: #348cb2;
+}
+.wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+.wrapper:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	width: 1px;
+}
+.background {
+			
+	background-attachment: fixed, fixed;
+	background-image: url("images/overlay-pattern.png"),url("images/overlay.svg");
+	background-position: top left, center center;
+	background-repeat: repeat, no-repeat;
+	background-size: auto, cover;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+header {
+	
+	display: inline-block;
+	width: 80%;
+	position: relative;
+	vertical-align: middle;
+}
+.name {
+	font-size: 5em;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	line-height: 1.2em;
+}
+.title {
+	margin: 0.7em 0 0.3em 0;
+	font-size: 1.3em;
+	opacity: 0.7;
+}
+nav {
+	margin: 1.5em 0 0 0;
+}
+.links {
+	list-style: none;
+}
+.links li {
+	display: inline-block;
+	height: 5em;
+	line-height: 5.8em;
+	position: relative;
+	top: 0;
+	width: 5em;
+}
+.links li a {
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+}
+.links li a:before {
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	border: 1px solid #ffffff;
+	border-radius: 100%;
+	height: 2.5em;
+	width: 2.5em;
+	line-height: 2.5em;
+	display: block;
+	font-size: 1.75em;
+	position: relative;
+	text-align: center;
+	top: 0;
+}
+.links li a:hover {
+	font-size: 1.1em;
+}
+.links li a:hover:before {
+	background-color: rgba(255, 255, 255, 0.175);
+}
+.links li a:active {
+	font-size: 0.9em;
+	background: none;
+}
+.links li a:active:before {
+	background-color: rgba(255, 255, 255, 0.175);
+}
+.icon {
+	position: relative;
+}
+.icon:before {
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	line-height: 8em;
+	height: 6em;
+}
+footer a {
+	-moz-transition: border-color 0.2s ease-in-out;
+	-webkit-transition: border-color 0.2s ease-in-out;
+	-o-transition: border-color 0.2s ease-in-out;
+	-ms-transition: border-color 0.2s ease-in-out;
+	transition: border-color 0.2s ease-in-out;
+	display: inline;
+	text-decoration: none;
+	border-bottom: 1px dotted #ffffff;
+	color: #ffffff;
+}
+footer a:hover {
+	border-color: transparent;
+}

@@ -1,0 +1,117 @@
+/*========================================================================*/
+/*	HTML elements														  */
+/*========================================================================*/
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 16pt;
+	line-height: 1.7em;
+	color: #000;
+	background-color: #FAFAFA;
+	display: block;
+}
+
+ul li {
+	display: inline-block;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+/*========================================================================*/
+/*	Grid       															  */
+/*========================================================================*/
+
+.container {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.container:after {
+	clear: both;
+}
+
+.right {
+	float: right !important;
+	padding-right: 0 !important;
+}
+
+.left {
+	float: left !important;
+}
+
+.row {
+	width: 100%;
+}
+
+.row:after,
+.row:before {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+.col-4 {
+	width: 33.33333333%;
+}
+
+.col-8 {
+	width: 66.66666667%;
+}
+
+.col-4,
+.col-8 {
+	float: left;
+}
+/*========================================================================*/
+/*	Header    															  */
+/*========================================================================*/
+
+header {
+	background-color: #1D1F21;
+	color: #FFF;
+}
+
+.contact_info li {
+	border-left: 1px solid #323436;
+}
+
+.contact_info li:last-child {
+	border-right: 1px solid #323436;
+}
+
+.contact_info li a,
+.social_links li a {
+	font-size: 8pt;
+	line-height: 0.5em;
+	color: #fff;
+	letter-spacing: 0.2em;
+	padding: 0 0.5em;
+	vertical-align: middle;
+}
+
+.contact_info li a .fa,
+.social_links li a .fa{
+	margin-right: 0.7em;
+}
+
+.contact_info li a:hover,
+.social_links li a:hover {
+	color: #3C9B27;
+}
+
+select{
+	background-color: #33353D;	
+	color: #FFF;
+}

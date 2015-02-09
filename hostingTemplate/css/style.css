@@ -21,11 +21,11 @@ body {
 }
 
 ul li {
-	display: inline-block;
 	list-style: none;
 }
 
 a {
+	color: #FFF;
 	text-decoration: none;
 }
 /*========================================================================*/
@@ -34,10 +34,11 @@ a {
 
 .container {
 	margin: 0 auto;
-	width: 90%;
+	width: 85%;
 }
 
-.container:after {
+.container:after,
+.container:before {
 	clear: both;
 }
 
@@ -62,17 +63,34 @@ a {
 	height: 0;
 }
 
+.col-3 {
+	width: 25%
+}
+
 .col-4 {
 	width: 33.33333333%;
+}
+
+.col-5 {
+	width: 41.66666667%
+}
+
+.col-7 {
+	width: 58.33333333%
 }
 
 .col-8 {
 	width: 66.66666667%;
 }
 
+.col-3,
 .col-4,
+.col-5,
+.col-7,
 .col-8 {
 	float: left;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 /*========================================================================*/
 /*	Header    															  */
@@ -84,7 +102,12 @@ header {
 }
 
 .contact_info li {
+	display: inline-block;
 	border-left: 1px solid #323436;
+}
+
+.social_links li {
+	display: inline-block;
 }
 
 .contact_info li:last-child {
@@ -93,16 +116,15 @@ header {
 
 .contact_info li a,
 .social_links li a {
-	font-size: 8pt;
+	font-size: 9pt;
 	line-height: 0.5em;
-	color: #fff;
 	letter-spacing: 0.2em;
 	padding: 0 0.5em;
 	vertical-align: middle;
 }
 
 .contact_info li a .fa,
-.social_links li a .fa{
+.social_links li a .fa {
 	margin-right: 0.7em;
 }
 
@@ -111,7 +133,99 @@ header {
 	color: #3C9B27;
 }
 
-select{
-	background-color: #33353D;	
+select {
+	background-color: #33353D;
 	color: #FFF;
+}
+/*========================================================================*/
+/*	Footer   															  */
+/*========================================================================*/
+
+footer {
+	background-color: #32353A;
+	color: #8b8b8b;
+	padding-top: 2em;
+	font-size: 12pt;
+}
+
+.footer_widget h3 {
+	font-weight: 500;
+	margin-bottom: 2em;
+	font-size: 16pt;
+	color: #FFF;
+}
+
+.footer_widget p {
+	font-size: 12pt;
+	text-align: justify;
+	line-height: 1.5em;
+}
+
+.footer_widget ul li a {
+	color: #8b8b8b;
+}
+
+.footer_widget ul li a:hover {
+	color: #3C9B27;
+	font-weight: 500;
+}
+
+.footer_widget ul li:before {
+	font-family: 'FontAwesome';
+	content: "\f061";
+	color: #3C9B27;
+	font-weight: bold;
+	margin-right: 0.5em;
+}
+/*========================================================================*/
+/*	Subscribe input: ;													  */
+/*========================================================================*/
+
+.email_block {
+	margin: 1em 0;
+	display: table;
+	border-collapse: separate;
+}
+
+input[type="email"] {
+	background: #42454a;
+	border: medium none;
+	border-radius: 3px 0 0 3px;
+	color: #fff;
+	height: 3em;
+	padding-left: 1em;
+	width: 100%;
+}
+
+input[type="submit"] {
+	background: #3C9B27;
+	color: #fff;
+	border: medium none;
+	border-radius: 0 3px 3px 0;
+	height: 3em;
+	width: 3em;
+	padding: 0;
+	vertical-align: middle;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+.email_block span {
+	display: table-cell;
+	width: 1%;
+	vertical-align: top;
+}
+/*========================================================================*/
+/*	Footer bottom  														  */
+/*========================================================================*/
+
+.footer_bottom {
+	background-color: #1D1F21;
+	margin-top: 2em;
+}
+
+.copyright {
+	font-size: 10pt;
 }

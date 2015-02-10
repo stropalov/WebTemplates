@@ -40,7 +40,7 @@ a {
 .container:after,
 .container:before,
 .post_footer:after,
-.post_footer:before{
+.post_footer:before {
 	clear: both;
 }
 
@@ -65,6 +65,10 @@ a {
 	height: 0;
 }
 
+.col-2 {
+	width: 16.66666667%
+}
+
 .col-3 {
 	width: 25%
 }
@@ -77,6 +81,10 @@ a {
 	width: 41.66666667%
 }
 
+.col-6 {
+	width: 50%
+}
+
 .col-7 {
 	width: 58.33333333%
 }
@@ -85,9 +93,11 @@ a {
 	width: 66.66666667%;
 }
 
+.col-2,
 .col-3,
 .col-4,
 .col-5,
+.col-6,
 .col-7,
 .col-8 {
 	float: left;
@@ -138,6 +148,36 @@ header {
 select {
 	background-color: #33353D;
 	color: #FFF;
+}
+/*========================================================================*/
+/*	Features section													  */
+/*========================================================================*/
+
+.features {
+	background-color: #FAFAFA;
+	color: #8b8b8b;
+	padding: 3em 0;
+	font-size: 12pt;
+}
+/*========================================================================*/
+/*	Plans section														  */
+/*========================================================================*/
+
+.plans {
+	background-color: #EDEAEA;
+	color: #8b8b8b;
+	padding: 3em 0;
+	font-size: 12pt;
+}
+/*========================================================================*/
+/*	Reviews section														  */
+/*========================================================================*/
+
+.reviews {
+	background-color: #FAFAFA;
+	color: #8b8b8b;
+	padding: 3em 0;
+	font-size: 12pt;
 }
 /*========================================================================*/
 /*	Blog posts section													  */

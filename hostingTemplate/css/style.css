@@ -65,6 +65,10 @@ a {
 	height: 0;
 }
 
+.offset {
+	padding-bottom: 2em;
+}
+
 .col-2 {
 	width: 16.66666667%
 }
@@ -158,6 +162,50 @@ select {
 	color: #8b8b8b;
 	padding: 3em 0;
 	font-size: 12pt;
+}
+
+.feature_left h4,
+.feature_right h4 {
+	font-size: 14pt;
+	font-weight: 500;
+	line-height: 1.5em;
+	margin-bottom: 1em;
+	color: #333;
+}
+
+.feature_left h4,
+.feature_left p {
+	text-align: right;
+}
+
+.feature_left p,
+.feature_right p {
+	line-height: 1.3em;
+}
+
+.feature_right span,
+.feature_left span {
+	border-radius: 50%;
+	height: 7em;
+	width: 7em;
+	background-color: #3C9B27;
+	margin: 1em 0 1em 0;
+	text-align: center;
+	color: #FFF;
+	line-height: 5em;
+}
+
+.feature_left span {
+	margin-left: 2em;
+}
+
+.feature_right span {
+	margin-right: 2em;
+}
+
+.feature_right span i,
+.feature_left span i {
+	font-size: 1.1em;
 }
 /*========================================================================*/
 /*	Plans section														  */

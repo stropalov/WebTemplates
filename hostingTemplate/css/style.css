@@ -40,7 +40,7 @@ a {
 .container:after,
 .container:before,
 .post_footer:after,
-.post_footer:before {
+.post_footer:before,{
 	clear: both;
 }
 
@@ -154,6 +154,52 @@ select {
 	color: #FFF;
 }
 /*========================================================================*/
+/*	Navigation section: 												  */
+/*========================================================================*/
+
+.header_menu {
+	background-color: #F3F3F3;
+}
+
+.logo{
+
+}
+.logo a{
+	font-size: 20pt;
+	color: #33353D;
+}
+
+.logo a .fa {
+	font-family: 'FontAwesome';
+	font-size: 14pt;
+	color: #33353D;
+	margin-right: 0.7em;
+}
+
+.main_menu li {
+	display: inline-block;
+	border-left: 1px solid #dfdfdf;
+	padding: 1em 1em;
+}
+
+.main_menu li:last-child{
+	border-right: 1px solid #dfdfdf;
+}
+
+.main_menu li a {
+	font-size: 14pt;
+	color: #33353D;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+
+	vertical-align: middle;
+}
+
+.slider_wrapper {
+	background-color: #1D1F21;
+	padding: 10em;
+}
+/*========================================================================*/
 /*	Features section													  */
 /*========================================================================*/
 
@@ -253,7 +299,7 @@ select {
 	border-top: 1px solid #f5f5f5;
 }
 
-.plan_bottom ul li:last-child{
+.plan_bottom ul li:last-child {
 	border-bottom: 1px solid #f5f5f5;
 }
 

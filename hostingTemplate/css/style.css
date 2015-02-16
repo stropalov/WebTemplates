@@ -40,7 +40,8 @@ a {
 .container:after,
 .container:before,
 .post_footer:after,
-.post_footer:before,{
+.post_footer:before,
+{
 	clear: both;
 }
 
@@ -161,19 +162,20 @@ select {
 	background-color: #F3F3F3;
 }
 
-.logo{
-
+.logo {
+	margin: 1em;
 }
-.logo a{
+
+.logo a {
 	font-size: 20pt;
 	color: #33353D;
 }
 
 .logo a .fa {
 	font-family: 'FontAwesome';
-	font-size: 14pt;
-	color: #33353D;
-	margin-right: 0.7em;
+	font-size: 19pt;
+	color: #3C9B27;
+	margin-right: 0.5em;
 }
 
 .main_menu li {
@@ -182,16 +184,22 @@ select {
 	padding: 1em 1em;
 }
 
-.main_menu li:last-child{
+.main_menu li:last-child {
 	border-right: 1px solid #dfdfdf;
 }
+
+.main_menu li:hover{
+	background-color: #3C9B27;
+	color:#FFF;
+}
+
+
 
 .main_menu li a {
 	font-size: 14pt;
 	color: #33353D;
 	line-height: 1.5em;
 	letter-spacing: 0.1em;
-
 	vertical-align: middle;
 }
 

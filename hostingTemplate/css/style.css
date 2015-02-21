@@ -35,6 +35,7 @@ a {
 .container {
 	margin: 0 auto;
 	width: 85%;
+	height: inherit;
 }
 
 .container:after,
@@ -56,6 +57,7 @@ a {
 
 .row {
 	width: 100%;
+	height: inherit;
 }
 
 .row:after,
@@ -160,10 +162,12 @@ select {
 
 .header_menu {
 	background-color: #F3F3F3;
+	height: 3.7em;
 }
 
 .logo {
-	margin: 1em;
+	padding: 1em;
+	height: inherit;
 }
 
 .logo a {
@@ -178,29 +182,39 @@ select {
 	margin-right: 0.5em;
 }
 
+.header_menu nav {
+	height: inherit;
+}
+
+.main_menu {
+	height: inherit;
+}
+
 .main_menu li {
 	display: inline-block;
-	border-left: 1px solid #dfdfdf;
-	padding: 1em 1em;
+	float: left;
+	height: inherit;
 }
 
-.main_menu li:last-child {
-	border-right: 1px solid #dfdfdf;
+.main_menu li a:hover {
+	background-color: #42454A;
+	color: #FFF;
 }
-
-.main_menu li:hover{
-	background-color: #3C9B27;
-	color:#FFF;
-}
-
-
 
 .main_menu li a {
-	font-size: 14pt;
+	display: table-cell;
+	height: inherit;
 	color: #33353D;
-	line-height: 1.5em;
-	letter-spacing: 0.1em;
+	padding: 0 1em;
+	font-size: 16pt;
+	line-height: 2.5em;
+	text-align: center;
+	border-right: 1px solid #323436;
 	vertical-align: middle;
+}
+
+.main_menu li:first-child a {
+	border-left: 1px solid #323436;
 }
 
 .slider_wrapper {

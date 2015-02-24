@@ -243,6 +243,7 @@ select {
 	width: 100%;
 	left: 0;
 	right: 0;
+	z-index: 100;
 }
 
 .main_menu li ul a {
@@ -261,10 +262,46 @@ select {
 	background-color: #FFF;
 	color: #33353D;
 }
+/*========================================================================*/
+/*	Slider section: ;													  */
+/*========================================================================*/
 
-.slider_wrapper {
-	background-color: #1D1F21;
-	padding: 10em;
+.flexslider {
+	border: none !important;
+}
+
+.flexslider img {
+	position: relative;
+}
+
+.flexslider .slide_text {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+}
+
+.flexslider .slide_text h1 {
+	font-size: 26pt;
+	font-weight: 500;
+	line-height: 1.5em;
+	margin-bottom: 0.7em;
+	color: #FFF;
+}
+
+.flexslider .slide_text p {
+	font-size: 19pt;
+	font-weight: 500;
+	color: #000;
+	line-height: 1.1em;
+	color: #FFF;
+}
+
+.flexslider .slide_text .plan_button {
+	margin-top: 1em;
+	width: 30%;
+	opacity: 0.8;
+	color: #FFF;
 }
 /*========================================================================*/
 /*	Features section													  */
@@ -380,6 +417,7 @@ select {
 
 .plan_button:hover {
 	opacity: 0.8;
+	cursor: pointer;
 }
 /*========================================================================*/
 /*	Reviews section														  */

@@ -27,8 +27,7 @@ svg path {
   background-color: #222; }
 
 .top_menu a:hover {
-  color: #FF6347;
-  background: rgba(255, 255, 255, 0.05); }
+  color: #FF6347; }
 .top_menu a {
   letter-spacing: 4px; }
 

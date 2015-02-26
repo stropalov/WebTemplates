@@ -4,7 +4,7 @@ body {
   font-size: 14px;
   min-width: 320px;
   position: relative;
-  line-height: 1.42857;
+  line-height: 1.6;
   -webkit-font-smoothing: antialised; }
 
 body input:focus:required:invalid,
@@ -18,13 +18,53 @@ body textarea:required:valid {
 .hidden {
   display: none; }
 
-section {
+section,
+.main_head {
   position: relative; }
+  section h3,
+  .main_head h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 35px; }
+
+section {
+  padding: 70px 0 90px; }
+  section h2 {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+    letter-spacing: 1px; }
+  section .personal_header {
+    font-size: 13px;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #555; }
+
+.s_descr_wrap {
+  text-align: center; }
+  .s_descr_wrap .s_descr {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    position: relative;
+    margin-bottom: 130px;
+    font-weight: 600; }
+    .s_descr_wrap .s_descr::after {
+      content: "";
+      height: 1px;
+      left: 50%;
+      margin-left: -75px;
+      margin-top: 60px;
+      position: absolute;
+      width: 150px; }
 
 .main_head {
-  min-height: 620px;
-  padding-top: 20px;
-  z-index: -1; }
+  min-height: 480px;
+  padding-top: 20px; }
 
 .loader {
   background: none repeat scroll 0 0 #ffffff;
@@ -36,20 +76,19 @@ section {
   top: 0;
   width: 100%;
   z-index: 9999; }
-
-.loader_inner {
-  background-image: url("../img/preloader.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #fff;
-  height: 60px;
-  width: 60px;
-  margin-top: -30px;
-  margin-left: -30px;
-  left: 50%;
-  top: 50%;
-  position: absolute; }
+  .loader .loader_inner {
+    background-image: url("../img/preloader.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-posirion: center center;
+    background-color: #fff;
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    left: 50%;
+    top: 50%;
+    position: absolute; }
 
 .logo_container {
   float: left; }
@@ -57,28 +96,19 @@ section {
 svg {
   height: 60px;
   width: 60px;
-  z-index: 100;
+  z-index: 1;
   position: relative; }
 
 .toggle_menu {
-  border: none;
-  height: 60px;
   width: 60px;
+  height: 60px;
   position: fixed;
   z-index: 100;
+  border: none;
   right: 20px;
   top: 20px; }
   .toggle_menu span {
     display: block; }
-
-.top_menu {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 150;
-  right: 0;
-  top: 0; }
 
 .sandwich {
   width: 28px;
@@ -101,6 +131,9 @@ svg {
   border-radius: 4px 4px 4px 4px;
   transition: transform 0.5s, top 0.2s;
   display: block; }
+
+svg path {
+  fill: #e0e0e0; }
 
 .sw-bottom {
   position: relative;
@@ -139,7 +172,7 @@ svg {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.85);
   z-index: 50;
   right: 0;
   top: 0;
@@ -151,7 +184,26 @@ svg {
     margin: 0; }
   .top_menu ul {
     margin-top: 180px;
-    text-align: center; }
+    text-align: center;
+    -webkit-animation-duration: 0.01s;
+    -moz-animation-duration: 0.01s;
+    animation-duration: 0.01s; }
+    .top_menu ul li:nth-child(1) a {
+      -webkit-animation-delay: 0;
+      -moz-animation-delay: 0;
+      animation-delay: 0; }
+    .top_menu ul li:nth-child(2) a {
+      -webkit-animation-delay: 0.1s;
+      -moz-animation-delay: 0.1s;
+      animation-delay: 0.1s; }
+    .top_menu ul li:nth-child(3) a {
+      -webkit-animation-delay: 0.2s;
+      -moz-animation-delay: 0.2s;
+      animation-delay: 0.2s; }
+    .top_menu ul li:nth-child(4) a {
+      -webkit-animation-delay: 0.3s;
+      -moz-animation-delay: 0.3s;
+      animation-delay: 0.3s; }
     .top_menu ul a {
       color: #fff;
       display: block;
@@ -175,8 +227,8 @@ svg {
 
 .top_wrapper {
   display: table;
-  height: 100%;
   width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -207,10 +259,14 @@ svg {
       font-weight: bold;
       font-size: 2.8em;
       background-color: rgba(0, 0, 0, 0.1);
+      box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 1000px;
       margin-left: 20px;
       margin-right: 20px;
       -webkit-animation-delay: 0.5s;
       -moz-animation-delay: 0.5s;
       animation-delay: 0.5s; }
+
+.toggle_menu {
+  background-color: #000; }
 
 /*# sourceMappingURL=main.css.map */

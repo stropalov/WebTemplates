@@ -259,7 +259,6 @@ svg path {
       font-weight: bold;
       font-size: 2.8em;
       background-color: rgba(0, 0, 0, 0.1);
-      box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 1000px;
       margin-left: 20px;
       margin-right: 20px;
       -webkit-animation-delay: 0.5s;
@@ -268,5 +267,10 @@ svg path {
 
 .toggle_menu {
   background-color: #000; }
+
+.main_footer {
+  padding: 50px 0;
+  font-size: 13px;
+  font-weight: 300; }
 
 /*# sourceMappingURL=main.css.map */

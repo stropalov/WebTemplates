@@ -56,6 +56,18 @@ svg path {
 .s_about p:nth-child(even) {
   color: #FF6347; }
 
+.resume_container h3 {
+  color: #222;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 600; }
+
+.resume_item .year {
+  background-color: #FF6347;
+  color: #fff; }
+.resume_item .resume_description {
+  letter-spacing: 1px; }
+
 section h3 {
   letter-spacing: 3px;
   color: #888; }

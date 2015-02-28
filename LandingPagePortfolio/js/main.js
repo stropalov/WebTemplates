@@ -15,7 +15,10 @@ $(document).ready(function () {
 	
 	$(".animation1").animated("flipInY", "fadeOutY");	
 	$(".animation2").animated("fadeInLeft", "fadeOutLeft");	
-	$(".animation3").animated("fadeInRight", "fadeOutRight");	
+	$(".animation3").animated("fadeInRight", "fadeOutRight");
+	
+	$(".left .resume_item").animated("fadeInLeft", "fadeOutDown");	
+	$(".right .resume_item").animated("fadeInRight", "fadeOutDown");	
 	
 	$(".popup").magnificPopup({type: "image"});
 	

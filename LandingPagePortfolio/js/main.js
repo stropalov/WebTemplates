@@ -9,6 +9,16 @@ $(document).ready(function () {
 		setMinHeight();
 	});
 
+	
+	$(".top_text h1").animated("fadeInDown", "fadeOutUp");	
+	$(".top_text p, .section_header").animated("fadeInUp", "fadeOutDown");	
+	
+	$(".animation1").animated("flipInY", "fadeOutY");	
+	$(".animation2").animated("fadeInLeft", "fadeOutLeft");	
+	$(".animation3").animated("fadeInRight", "fadeOutRight");	
+	
+	$(".popup").magnificPopup({type: "image"});
+	
 	$(window).load(function () {
 		$(".loader_inner").fadeOut();
 		$(".loader").delay(500).fadeOut("slow");

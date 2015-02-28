@@ -268,6 +268,30 @@ svg path {
 .toggle_menu {
   background-color: #000; }
 
+.person {
+  text-align: center; }
+  .person img {
+    max-width: 220px;
+    display: inline-block;
+    border-radius: 50%; }
+
+.s_about p {
+  margin-bottom: 25px; }
+.s_about ul,
+.s_about li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+.s_about li {
+  margin-bottom: 10px; }
+.s_about .social_wrap {
+  margin-top: 25px; }
+
+.social_wrap li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 0 3px; }
+
 .main_footer {
   padding: 50px 0;
   font-size: 13px;

@@ -6,7 +6,8 @@ a {
   color: #FF6347; }
 
 p,
-body .main_footer {
+body .main_footer,
+.s_about li {
   color: #888; }
 
 .color_element {
@@ -51,5 +52,12 @@ svg path {
   letter-spacing: 5px; }
   .s_descr::after {
     background-color: #222; }
+
+.s_about p:nth-child(even) {
+  color: #FF6347; }
+
+section h3 {
+  letter-spacing: 3px;
+  color: #888; }
 
 /*# sourceMappingURL=tomato.css.map */

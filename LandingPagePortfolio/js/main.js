@@ -9,6 +9,12 @@ $(document).ready(function () {
 		setMinHeight();
 	});
 
+	$("#portfolio_grid").mixItUp();
+	
+	$(".s_portfolio li").click(function(){
+		$(".s_portfolio li").removeClass("active");
+		$(this).addClass("active");
+	});
 	
 	$(".top_text h1").animated("fadeInDown", "fadeOutUp");	
 	$(".top_text p, .section_header").animated("fadeInUp", "fadeOutDown");	
@@ -21,6 +27,7 @@ $(document).ready(function () {
 	$(".right .resume_item").animated("fadeInRight", "fadeOutDown");	
 	
 	$(".popup").magnificPopup({type: "image"});
+	$(".popup_content").magnificPopup({type: "inline"});
 	
 	$(window).load(function () {
 		$(".loader_inner").fadeOut();

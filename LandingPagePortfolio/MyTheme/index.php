@@ -1,52 +1,54 @@
 <?php get_header(); ?>
 
-<section class="s_about bg_light" id="about">
+<section id="about" class="s_about bg_light">
 	<div class="section_header">
-		<h2>Обо мне</h2>
+		<h2><?php
+				$idObj = get_category_by_slug('s_about');
+				$id = $idObj->term_id;
+				echo get_cat_name($id);
+				?></h2>
 		<div class="s_descr_wrap">
-			<div class="s_descr">Познакомимся поближе</div>
+			<div class="s_descr">
+				<?php echo category_description($id); ?>
+			</div>
 		</div>
 	</div>
 	<div class="section_content">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 col-md-push-4 animation1">
+
+				<?php if ( have_posts() ) : query_posts( 'p=5'); while (have_posts()) : the_post(); ?>
+				<div class="col-md-4 col-md-push-4 animation_1">
 					<h3>Фото</h3>
 					<div class="person">
-						<a href="img/50-guitelec.png" class="popup"><img src="img/50-guitelec.png" alt="photo">
+						<?php if ( has_post_thumbnail() ) : ?>
+						<a class="popup" href="<?php
+										$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );
+										echo $large_image_url[0];
+										?>">
+							<?php the_post_thumbnail(array(220, 220)); ?>
 						</a>
+						<?php endif; ?>
 					</div>
 				</div>
-				<div class="col-md-4 col-md-pull-4 animation2">
-					<h3>Немного о себе</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quasi numquam id eum saepe at et, inventore eaque deleniti incidunt.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi deleniti nesciunt fugit iste, sequi sint similique sunt saepe expedita doloremque.</p>
+				<div class="col-md-4 col-md-pull-4 animation_2">
+					<h3><?php the_title(); ?></h3>
+					<?php the_content(); ?>
 				</div>
-				<div class="col-md-4 animation3 personal_block">
-					<h3>Персональная информация</h3>
-					<h2 class="personal_header">John Doe</h2>
-					<ul>
-						<li>Профессиональное создание сайтов. Разработка дизайна. </li>
-						<li>День рождения: 1 января 1991г.</li>
-						<li>Номер телефона: +9 999 99 99</li>
-						<li>E-mail:
-							<a href="mailto:admin@test.com">admin@test.com</a>
-						</li>
-						<li>Веб-сайт: <a href="test.com" target="_blank">test.com</a>
-						</li>
-					</ul>
+				<? endwhile; endif; wp_reset_query(); ?>
+
+				<div class="col-md-4 animation_3 personal_last_block">
+					<?php if ( have_posts() ) : query_posts( 'p=8'); while (have_posts()) : the_post(); ?>
+					<h3><?php the_title(); ?></h3>
+					<h2 class="personal_header"><?php echo get_bloginfo('name'); ?></h2>
+					<?php the_content(); ?>
+					<? endwhile; endif; wp_reset_query(); ?>
 					<div class="social_wrap">
 						<ul>
-							<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+							<?php if ( have_posts() ) : query_posts( 'cat=3'); while (have_posts()) : the_post(); ?>
+							<li><a href="<?php echo get_post_meta($post->ID, 'soc_url', true); ?>" target="_blank" title="<?php the_title(); ?>"><i class="fa <?php echo get_post_meta($post->ID, 'fonts_awesome', true); ?>"></i></a>
 							</li>
-							<li><a href="" target="_blank"><i class="fa fa-vk"></i></a>
-							</li>
-							<li><a href="" target="_blank"><i class="fa fa-github"></i></a>
-							</li>
-							<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a>
-							</li>
-							<li><a href="" target="_blank"><i class="fa fa-facebook"></i></a>
-							</li>
+							<? endwhile; endif; wp_reset_query(); ?>
 						</ul>
 					</div>
 				</div>
@@ -57,59 +59,59 @@
 
 <section class="s_resume" id="resume">
 	<div class="section_header">
-		<h2>Резюме</h2>
+		<h2><?php
+				$idObj = get_category_by_slug('s_resume');
+				$id = $idObj->term_id;
+				echo get_cat_name($id);
+				?></h2>
 		<div class="s_descr_wrap">
-			<div class="s_descr">Мои знания и достижения</div>
+			<div class="s_descr">
+				<?php echo category_description($id); ?>
+			</div>
 		</div>
 	</div>
 	<div class="section_container">
 		<div class="row">
 			<div class="resume_container">
 				<div class="col-md-6 col-sm-6 left">
-					<h3>Работа</h3>
+					<h3><?php
+								$idObj = get_category_by_slug('c_work');
+								$id = $idObj->term_id;
+								echo get_cat_name($id); ?></h3>
 					<div class="resume_icon"><i class="icon-basic-case"></i>
 					</div>
+
+
+					<?php if ( have_posts() ) : query_posts( 'cat=' . $id); while (have_posts()) : the_post(); ?>
 					<div class="resume_item">
-						<div class="year">2008-2015</div>
-						<div class="resume_description">Lorem ipsum dolor. <strong>Lorem</strong>
+						<div class="year">
+							<?php echo get_post_meta($post->ID, 'resume_years', true); ?></div>
+						<div class="resume_description">
+							<?php echo get_post_meta($post->ID, 'resume_place', true); ?><strong><?php the_title(); ?></strong>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptates error eligendi praesentium excepturi consectetur repudiandae natus voluptate, exercitationem cumque.</p>
+						<?php the_content(); ?>
 					</div>
-					<div class="resume_item">
-						<div class="year">2008-2015</div>
-						<div class="resume_description">Lorem ipsum dolor. <strong>Lorem</strong>
-						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptates error eligendi praesentium excepturi consectetur repudiandae natus voluptate, exercitationem cumque.</p>
-					</div>
-					<div class="resume_item">
-						<div class="year">2008-2015</div>
-						<div class="resume_description">Lorem ipsum dolor. <strong>Lorem</strong>
-						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptates error eligendi praesentium excepturi consectetur repudiandae natus voluptate, exercitationem cumque.</p>
-					</div>
+					<? endwhile; endif; wp_reset_query(); ?>
+
+
+
 				</div>
 				<div class="col-md-6 col-sm-6 right">
-					<h3>Учеба</h3>
+					<h3><?php
+								$idObj = get_category_by_slug('c_edu');
+								$id = $idObj->term_id;
+								echo get_cat_name($id); ?></h3>
 					<div class="resume_icon"><i class="icon-basic-book-pen"></i>
 					</div>
+					<?php if ( have_posts() ) : query_posts( 'cat=' . $id); while (have_posts()) : the_post(); ?>
 					<div class="resume_item">
-						<div class="year">2008-2015</div>
-						<div class="resume_description">Lorem ipsum dolor. <strong>Lorem</strong>
-						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptates error eligendi praesentium excepturi consectetur repudiandae natus voluptate, exercitationem cumque.</p>
+						<div class="year">
+							<?php echo get_post_meta($post->ID, 'resume_years', true); ?></div>
+						<div class="resume_description"><strong><?php the_title(); ?></strong>
+							<?php echo get_post_meta($post->ID, 'resume_place', true); ?></div>
+						<?php the_content(); ?>
 					</div>
-					<div class="resume_item">
-						<div class="year">2008-2015</div>
-						<div class="resume_description">Lorem ipsum dolor. <strong>Lorem</strong>
-						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptates error eligendi praesentium excepturi consectetur repudiandae natus voluptate, exercitationem cumque.</p>
-					</div>
-					<div class="resume_item">
-						<div class="year">2008-2015</div>
-						<div class="resume_description">Lorem ipsum dolor. <strong>Lorem</strong>
-						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptates error eligendi praesentium excepturi consectetur repudiandae natus voluptate, exercitationem cumque.</p>
-					</div>
+					<? endwhile; endif; wp_reset_query(); ?>
 				</div>
 			</div>
 		</div>
@@ -135,7 +137,7 @@
 					</ul>
 				</div>
 				<div id="portfolio_grid">
-					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_1" data-myorder="1"><img src="img/portfolio-images/1.jpg" alt="">
+					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_1" data-myorder="1"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/1.jpg" alt="">
 						<div class="port_item_cont">
 							<h3>Заголовок работы</h3>
 							<p>Описание работы</p>
@@ -146,13 +148,13 @@
 										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
 										<h3>Заголовок работы</h3>
 										<p>Lorem ipsum dolor sit amet.</p>
-										<img src="img/portfolio-images/1.jpg" alt="Alt">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/1.jpg" alt="Alt">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_1" data-myorder="1"><img src="img/portfolio-images/2.jpg" alt="">
+					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_1" data-myorder="1"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/2.jpg" alt="">
 						<div class="port_item_cont">
 							<h3>Заголовок работы</h3>
 							<p>Описание работы</p>
@@ -163,13 +165,13 @@
 										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
 										<h3>Заголовок работы</h3>
 										<p>Lorem ipsum dolor sit amet.</p>
-										<img src="img/portfolio-images/2.jpg" alt="Alt">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/2.jpg" alt="Alt">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_1" data-myorder="1"><img src="img/portfolio-images/3.jpg" alt="">
+					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_1" data-myorder="1"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/3.jpg" alt="">
 						<div class="port_item_cont">
 							<h3>Заголовок работы</h3>
 							<p>Описание работы</p>
@@ -180,13 +182,13 @@
 										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
 										<h3>Заголовок работы</h3>
 										<p>Lorem ipsum dolor sit amet.</p>
-										<img src="img/portfolio-images/3.jpg" alt="Alt">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/3.jpg" alt="Alt">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_1" data-myorder="1"><img src="img/portfolio-images/4.jpg" alt="">
+					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_1" data-myorder="1"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/4.jpg" alt="">
 						<div class="port_item_cont">
 							<h3>Заголовок работы</h3>
 							<p>Описание работы</p>
@@ -197,13 +199,13 @@
 										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
 										<h3>Заголовок работы</h3>
 										<p>Lorem ipsum dolor sit amet.</p>
-										<img src="img/portfolio-images/4.jpg" alt="Alt">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/4.jpg" alt="Alt">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_2" data-myorder="2"><img src="img/portfolio-images/5.jpg" alt="">
+					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_2" data-myorder="2"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/5.jpg" alt="">
 						<div class="port_item_cont">
 							<h3>Заголовок работы</h3>
 							<p>Описание работы</p>
@@ -214,13 +216,13 @@
 										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
 										<h3>Заголовок работы</h3>
 										<p>Lorem ipsum dolor sit amet.</p>
-										<img src="img/portfolio-images/5.jpg" alt="Alt">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/5.jpg" alt="Alt">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_2" data-myorder="2"><img src="img/portfolio-images/6.jpg" alt="">
+					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_2" data-myorder="2"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/6.jpg" alt="">
 						<div class="port_item_cont">
 							<h3>Заголовок работы</h3>
 							<p>Описание работы</p>
@@ -231,13 +233,13 @@
 										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
 										<h3>Заголовок работы</h3>
 										<p>Lorem ipsum dolor sit amet.</p>
-										<img src="img/portfolio-images/6.jpg" alt="Alt">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/6.jpg" alt="Alt">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_2" data-myorder="2"><img src="img/portfolio-images/2.jpg" alt="">
+					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_2" data-myorder="2"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/2.jpg" alt="">
 						<div class="port_item_cont">
 							<h3>Заголовок работы</h3>
 							<p>Описание работы</p>
@@ -248,13 +250,13 @@
 										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
 										<h3>Заголовок работы</h3>
 										<p>Lorem ipsum dolor sit amet.</p>
-										<img src="img/portfolio-images/2.jpg" alt="Alt">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/2.jpg" alt="Alt">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_3" data-myorder="3"><img src="img/portfolio-images/5.jpg" alt="">
+					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_3" data-myorder="3"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/5.jpg" alt="">
 						<div class="port_item_cont">
 							<h3>Заголовок работы</h3>
 							<p>Описание работы</p>
@@ -265,7 +267,7 @@
 										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
 										<h3>Заголовок работы</h3>
 										<p>Lorem ipsum dolor sit amet.</p>
-										<img src="img/portfolio-images/5.jpg" alt="Alt">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/5.jpg" alt="Alt">
 									</div>
 								</div>
 							</div>
@@ -329,5 +331,5 @@
 		</div>
 	</div>
 </section>
-	
+
 <?php get_footer(); ?>

@@ -4,16 +4,11 @@
 			&copy; 2015 John Doe
 			<div class="social_wrap">
 				<ul>
-					<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+					<?php if ( have_posts() ) : query_posts( 'cat=3'); while (have_posts()) : the_post(); ?>
+					<li><a href="<?php echo get_post_meta($post->ID, 'soc_url', true); ?>" target="_blank" title="<?php the_title(); ?>"><i class="fa <?php echo get_post_meta($post->ID, 'fonts_awesome', true); ?>"></i></a>
 					</li>
-					<li><a href="" target="_blank"><i class="fa fa-vk"></i></a>
-					</li>
-					<li><a href="" target="_blank"><i class="fa fa-github"></i></a>
-					</li>
-					<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a>
-					</li>
-					<li><a href="" target="_blank"><i class="fa fa-facebook"></i></a>
-					</li>
+
+					<? endwhile; endif; wp_reset_query(); ?>
 				</ul>
 			</div>
 		</div>

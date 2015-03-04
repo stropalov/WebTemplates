@@ -120,9 +120,15 @@
 
 <section class="s_portfolio bg_dark" id="portfolio">
 	<div class="section_header">
-		<h2>Портфолио</h2>
+		<h2><?php
+				$idObj = get_category_by_slug('s_portfolio');
+				$id = $idObj->term_id;
+				echo get_cat_name($id);
+				?></h2>
 		<div class="s_descr_wrap">
-			<div class="s_descr">Мои работы</div>
+			<div class="s_descr">
+				<?php echo category_description($id); ?>
+			</div>
 		</div>
 	</div>
 	<div class="section_content">
@@ -131,148 +137,46 @@
 				<div class="filter_div controls">
 					<ul>
 						<li class="filter active" data-filter="all">Все работы</li>
-						<li class="filter" data-filter=".category_1">Сайты</li>
-						<li class="filter" data-filter=".category_2">Айдентика</li>
-						<li class="filter" data-filter=".category_3">Логотипы</li>
+						<li class="filter" data-filter=".sites">Сайты</li>
+						<li class="filter" data-filter=".identy">Айдентика</li>
+						<li class="filter" data-filter=".logos">Логотипы</li>
 					</ul>
 				</div>
 				<div id="portfolio_grid">
-					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_1" data-myorder="1"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/1.jpg" alt="">
+
+					<?php if ( have_posts() ) : query_posts( 'cat=' . $id); while (have_posts()) : the_post(); ?>
+
+					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item <?php
+								$tags = wp_get_post_tags($post->ID);
+								if ($tags) {
+									foreach($tags as $tag) {
+										echo ' ' . $tag->name;
+									}
+								}
+								?>  ">
+						<?php the_post_thumbnail(array(400, 300)); ?>
 						<div class="port_item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
-							<a href="#work_1" class="popup_content">Посмотреть</a>
-							<div class="hidden">
-								<div class="podrt_descr" id="work_1">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-										<h3>Заголовок работы</h3>
-										<p>Lorem ipsum dolor sit amet.</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/1.jpg" alt="Alt">
-									</div>
+							<h3><?php the_title(); ?></h3>
+							<?php the_excerpt(); ?>
+							<a href="#" class="popup_content">Посмотреть</a>
+						</div>
+						<div class="hidden">
+							<div class="podrt_descr">
+								<div class="modal-box-content">
+									<button class="mfp-close" type="button" title="Закрыть (Esc)">X</button>
+									<h3><?php the_title(); ?></h3>
+									<?php the_content(); ?>
+									<img src="<?php
+												$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );
+												echo $large_image_url[0];
+												?>" alt="<?php the_title(); ?>" />
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_1" data-myorder="1"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/2.jpg" alt="">
-						<div class="port_item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
-							<a href="#work_2" class="popup_content">Посмотреть</a>
-							<div class="hidden">
-								<div class="podrt_descr" id="work_2">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-										<h3>Заголовок работы</h3>
-										<p>Lorem ipsum dolor sit amet.</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/2.jpg" alt="Alt">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_1" data-myorder="1"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/3.jpg" alt="">
-						<div class="port_item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
-							<a href="#work_3" class="popup_content">Посмотреть</a>
-							<div class="hidden">
-								<div class="podrt_descr" id="work_3">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-										<h3>Заголовок работы</h3>
-										<p>Lorem ipsum dolor sit amet.</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/3.jpg" alt="Alt">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_1" data-myorder="1"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/4.jpg" alt="">
-						<div class="port_item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
-							<a href="#work_4" class="popup_content">Посмотреть</a>
-							<div class="hidden">
-								<div class="podrt_descr" id="work_4">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-										<h3>Заголовок работы</h3>
-										<p>Lorem ipsum dolor sit amet.</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/4.jpg" alt="Alt">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_2" data-myorder="2"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/5.jpg" alt="">
-						<div class="port_item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
-							<a href="#work_5" class="popup_content">Посмотреть</a>
-							<div class="hidden">
-								<div class="podrt_descr" id="work_5">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-										<h3>Заголовок работы</h3>
-										<p>Lorem ipsum dolor sit amet.</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/5.jpg" alt="Alt">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_2" data-myorder="2"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/6.jpg" alt="">
-						<div class="port_item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
-							<a href="#work_6" class="popup_content">Посмотреть</a>
-							<div class="hidden">
-								<div class="podrt_descr" id="work_6">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-										<h3>Заголовок работы</h3>
-										<p>Lorem ipsum dolor sit amet.</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/6.jpg" alt="Alt">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_2" data-myorder="2"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/2.jpg" alt="">
-						<div class="port_item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
-							<a href="#work_2" class="popup_content">Посмотреть</a>
-							<div class="hidden">
-								<div class="podrt_descr" id="work_2">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-										<h3>Заголовок работы</h3>
-										<p>Lorem ipsum dolor sit amet.</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/2.jpg" alt="Alt">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category_3" data-myorder="3"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/5.jpg" alt="">
-						<div class="port_item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
-							<a href="#work_5" class="popup_content">Посмотреть</a>
-							<div class="hidden">
-								<div class="podrt_descr" id="work_5">
-									<div class="modal-box-content">
-										<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-										<h3>Заголовок работы</h3>
-										<p>Lorem ipsum dolor sit amet.</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/5.jpg" alt="Alt">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+
+					<? endwhile; endif; wp_reset_query(); ?>
+
 				</div>
 			</div>
 		</div>

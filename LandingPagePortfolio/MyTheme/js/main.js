@@ -41,11 +41,11 @@ $(document).ready(function () {
 			$(".sandwich").toggleClass("active");
 		});
 	});
-	
+
 	$(".toggle_menu").click(function () {
 		$(".sandwich").toggleClass("active");
 	});
-	
+
 	$(".top_menu ul a").click(function () {
 		$(".top_menu").fadeOut(600);
 		$(".sandwich").toggleClass("active");
@@ -63,6 +63,11 @@ $(document).ready(function () {
 			$(".top_menu").fadeIn(600);
 			$(".top_menu li a").addClass("fadeInUp animated");
 		}
+	});
+
+	$(".portfolio_item").each(function (i) {
+		$(this).find("a").attr("href", "#work_" + i);
+		$(this).find(".podrt_descr").attr("id", "work_" + i);
 	});
 
 	$("input, select, textarea").not("[type=submit]").jqBootstrapValidation();

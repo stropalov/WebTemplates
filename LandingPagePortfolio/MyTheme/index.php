@@ -185,9 +185,15 @@
 
 <section class="s_contacts bg_light" id="contacts">
 	<div class="section_header">
-		<h2>Контакты</h2>
+		<h2><?php
+				$idObj = get_category_by_slug('s_contacts');
+				$id = $idObj->term_id;
+				echo get_cat_name($id);
+				?></h2>
 		<div class="s_descr_wrap">
-			<div class="s_descr">Оставьте ваше сообщение</div>
+			<div class="s_descr">
+				<?php echo category_description($id); ?>
+			</div>
 		</div>
 	</div>
 	<div class="section_content">
@@ -197,17 +203,28 @@
 					<div class="contact_box">
 						<div class="contacts_icon icon-basic-geolocalize-05"></div>
 						<h3>Адрес</h3>
-						<p>Lorem ipsum dolor sit amet.</p>
+						<p>
+							<?php $options=get_option( 'sample_theme_options'); echo $options[ 'sitetext']; ?>
+						</p>
+						</p>
 					</div>
 					<div class="contact_box">
 						<div class="contacts_icon icon-basic-smartphone"></div>
 						<h3>Телефон</h3>
-						<p>+9 999 99 99</p>
+						<p>
+							<?php $options=get_option( 'sample_theme_options'); echo $options[ 'phonetext']; ?>
+						</p>
 					</div>
 					<div class="contact_box">
 						<div class="contacts_icon icon-basic-webpage-img-txt"></div>
-						<h3>Веб-сайт:</h3>
-						<p><a href="mailto:admin@test.com">admin@test.com</a>
+						<h3>Почта:</h3>
+						<p>
+							<a href="//<?php
+								$options = get_option('sample_theme_options');
+								echo $options['addresstext']; ?>" target="_blank">
+								<?php $options=get_option( 'sample_theme_options'); echo $options[ 'addresstext']; ?>
+							</a>
+						</p>
 						</p>
 					</div>
 				</div>

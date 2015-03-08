@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	// set min-height to max window height
 	function setMinHeight() {
-		$("header").css("height", $(window).height());
+		$("header").css("min-height", $(window).height());
 	};
 	setMinHeight();
 	// on resize action

@@ -34,6 +34,13 @@
 	.top_header h2 {
 		font-size: 28px;
 	}
+	.tabs_header .tabs .tab{
+		font-size: 12px;
+		padding: 15px 15px;
+	}
+	.button_wrap{
+		text-align: center;	
+	}
 }
 /* Custom, iPhone Retina */
 

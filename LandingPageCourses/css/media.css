@@ -61,3 +61,17 @@
 /* Large Devices, Wide Screens */
 
 @media only screen and (min-width: 1200px) {}
+
+@media (min-height: 720px) and (min-width: 1400px) {
+	.tabs_header{
+		position: absolute;
+		bottom: 80px;
+	}
+	.tabs_header > div{
+		width: 100%;	
+		max-width: 660px;
+	}
+	.top_header{
+		margin-top: 150px;
+	}
+}

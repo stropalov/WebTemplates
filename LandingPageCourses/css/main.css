@@ -138,4 +138,31 @@ header {
     background-color: #fff;
     color: #000; }
 
+.s_tizers {
+  background-color: #c6d8ee;
+  background-image: -webkit-linear-gradient(#c6d8ee, #e8eff7);
+  background-image: linear-gradient(#c6d8ee, #e8eff7);
+  color: #003469;
+  font-family: "CleanvertisingLight", sans-serif;
+  text-transform: uppercase;
+  padding: 35px 0 0; }
+  .s_tizers span {
+    font-size: 14px; }
+  .s_tizers strong {
+    font-weight: normal;
+    font-size: 23px;
+    display: block; }
+  .s_tizers .row > div {
+    margin-bottom: 35px; }
+
+.tiz_img,
+.tiz_descr {
+  display: inline-block;
+  vertical-align: bottom; }
+
+.tiz_img i {
+  font-size: 60px;
+  line-height: 48px;
+  margin-right: 10px; }
+
 /*# sourceMappingURL=main.css.map */

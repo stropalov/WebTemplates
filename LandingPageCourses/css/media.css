@@ -9,6 +9,9 @@
 		display: block;
 		margin-top: 10px;
 	}
+	.profi_item:last-child {
+		margin-bottom: 30px;
+	}
 }
 /* Medium Devices, Desktops */
 
@@ -37,6 +40,14 @@
 		font-size: 30px;
 	}
 }
+
+@media only screen and (max-width: 600px) {
+	.profi_item {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}
 /* Extra Small Devices, Phones */
 
 @media only screen and (max-width: 480px) {
@@ -56,6 +67,10 @@
 	}
 	.button_wrap {
 		text-align: center;
+	}
+	section h2 {
+		font-size: 38px;
+		line-height: 42px;
 	}
 }
 /* Custom, iPhone Retina */

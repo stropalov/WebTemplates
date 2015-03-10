@@ -198,4 +198,41 @@ header {
   .profi_right p {
     margin: 5px 0 0 0; }
 
+form {
+  background-color: #F7F7F7;
+  padding: 25px 30px;
+  border: #67bc5c 5px solid;
+  border-radius: 5px; }
+  form h2 {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-family: "RobotoBold", sans-serif;
+    font-size: 22px;
+    color: #333;
+    line-height: 22px; }
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666; }
+  form input,
+  form select {
+    display: block;
+    line-height: 40px;
+    height: 40px;
+    width: 100%;
+    border: #D9D9D9 1px solid;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.06) inset;
+    text-indent: 10px;
+    font-size: 20px; }
+    form input:focus,
+    form select:focus {
+      box-shadow: #67bc5c 0 0 0 2px;
+      border-radius: 3px;
+      border-color: #67bc5c; }
+  form .button_wrap {
+    text-align: center;
+    margin: 30px 0 10px; }
+
 /*# sourceMappingURL=main.css.map */

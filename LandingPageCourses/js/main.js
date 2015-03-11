@@ -1,4 +1,9 @@
 $(document).ready(function () {
+	
+	$.stellar({
+		responsive: true
+	});
+	
 	// set min-height to max window height
 	function setMinHeight() {
 		$("header").css("min-height", $(window).height());

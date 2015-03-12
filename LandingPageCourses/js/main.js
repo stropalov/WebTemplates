@@ -1,9 +1,25 @@
 $(document).ready(function () {
-	
+	// parallax background
 	$.stellar({
-		responsive: true
+		responsive: true,
+		horizontalOffset: 60
 	});
-	
+
+	// carousel
+	$(".carousel").owlCarousel({
+		items : 2
+		autoPlay : true,
+		stopOnHover : true,
+		nav : true
+		/*responsive: {
+			0: {
+				items: 1,
+				nav: true
+			}
+		},
+		navText: ""*/
+	});
+
 	// set min-height to max window height
 	function setMinHeight() {
 		$("header").css("min-height", $(window).height());
@@ -20,7 +36,7 @@ $(document).ready(function () {
 		$(".top_phone .wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
 		$(".top_phone .tab_item").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("active");
-	
+
 	// tabs for extras
 	$(".tabs_header .wrapper .tab").click(function () {
 		$(".tabs_header .wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");

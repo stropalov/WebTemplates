@@ -7,17 +7,15 @@ $(document).ready(function () {
 
 	// carousel
 	$(".carousel").owlCarousel({
-		items : 2
-		autoPlay : true,
-		stopOnHover : true,
-		nav : true
-		/*responsive: {
+		items: 1,
+		nav: true,
+		responsive: {
 			0: {
 				items: 1,
 				nav: true
 			}
 		},
-		navText: ""*/
+		navText: ""
 	});
 
 	// set min-height to max window height
@@ -41,5 +39,15 @@ $(document).ready(function () {
 	$(".tabs_header .wrapper .tab").click(function () {
 		$(".tabs_header .wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
 		$(".tabs_header .tab_item").hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass("active");
+
+	$(".bottom_phone .wrapper .tab").click(function () {
+		$(".bottom_phone .wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+		$(".bottom_phone .tab_item").hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass("active");
+
+	$(".contacts_top .tab").click(function () {
+		$(".contacts_top .tab").removeClass("active").eq($(this).index()).addClass("active");
+		$(".s_contacts .tab_item").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("active");
 });

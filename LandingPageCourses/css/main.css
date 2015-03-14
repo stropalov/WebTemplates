@@ -6,7 +6,8 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.6;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; }
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
@@ -144,6 +145,8 @@ header {
   font-family: "RobotoBold", sans-serif; }
   .button a {
     color: #fff;
+    text-decoration: none; }
+  .button:hover {
     text-decoration: none; }
   .button.btn_red {
     background-color: #9B1818; }

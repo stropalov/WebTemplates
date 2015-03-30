@@ -1,9 +1,77 @@
 @import "http://fonts.googleapis.com/css?family=Acme";
 @import "http://fonts.googleapis.com/css?family=Sintony:400,700";
 body {
-  font-family: "Sintony", sans-serif; }
+  font-family: "Sintony", sans-serif;
+  color: #868686;
+  font-size: 14px;
+  background-color: #dfdfdf; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Acme", sans-serif; }
+  font-family: "Acme", sans-serif;
+  font-weight: 700; }
+
+header {
+  text-align: center;
+  width: 100%; }
+  header h1 {
+    font-size: 48px;
+    line-height: 40px; }
+  header p {
+    font-size: 24px;
+    letter-spacing: 4px; }
+  header nav {
+    background-color: #cdcdcd; }
+    header nav ul {
+      list-style: none;
+      padding-left: 0px;
+      width: 1000px;
+      height: 70px;
+      margin: 0 auto;
+      text-align: left;
+      position: relative;
+      left: -4px; }
+    header nav li {
+      float: left;
+      height: 70px;
+      width: 140px;
+      border-left: 4px solid #dfdfdf;
+      position: relative; }
+      header nav li a {
+        position: absolute;
+        width: 140px;
+        height: 70px;
+        color: #fff;
+        font-size: 18px;
+        box-sizing: border-box;
+        padding-top: 24px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase; }
+    header nav li:last-child {
+      border-right: 4px solid #dfdfdf; }
+
+.main-content {
+  width: 1000px;
+  margin: 0 auto; }
+  .main-content .slider {
+    background-color: #fff; }
+
+.bg-orange {
+  background-color: #f26c4e; }
+
+.bg-purple {
+  background-color: #cf6baa; }
+
+.bg-yellow {
+  background-color: #f2c24d; }
+
+.bg-green {
+  background-color: #a3d178; }
+
+.bg-dark-green {
+  background-color: #8ebe5f; }
+
+.bg-blue {
+  background-color: #78ccd0; }
 
 /*# sourceMappingURL=main.css.map */

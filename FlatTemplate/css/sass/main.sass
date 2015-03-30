@@ -3,8 +3,76 @@
 @import	"http://fonts.googleapis.com/css?family=Acme"
 @import	"http://fonts.googleapis.com/css?family=Sintony:400,700"
 
+$text-color: #868686
+$main-bg: #dfdfdf
+$nav-bg: #cdcdcd
+
 body
 	font-family: "Sintony", sans-serif
+	color: $text-color
+	font-size: 14px
+	background-color: $main-bg
 
 h1, h2, h3, h4, h5, h6
 	font-family: "Acme", sans-serif
+	font-weight: 700
+
+header
+	text-align: center
+	width: 100%
+	h1
+		font-size: 48px
+		line-height: 40px
+	p
+		font-size: 24px
+		letter-spacing: 4px
+	nav
+		background-color: $nav-bg
+		ul
+			list-style: none
+			padding-left: 0px
+			width: 1000px
+			height: 70px
+			margin: 0 auto
+			text-align: left
+			position: relative
+			left: -4px
+		li
+			float: left
+			height: 70px
+			width: 140px
+			border-left: 4px solid $main-bg
+			position: relative
+			a
+				position: absolute
+				width: 140px
+				height: 70px
+				color: #fff
+				font-size: 18px
+				box-sizing: border-box
+				padding-top: 24px
+				text-align: center
+				text-decoration: none
+				text-transform: uppercase
+		li:last-child
+			border-right: 4px solid $main-bg
+			
+.main-content
+	width: 1000px
+	margin: 0 auto
+	.slider
+		background-color: #fff
+
+.bg-orange
+	background-color: #f26c4e
+.bg-purple
+	background-color: #cf6baa
+.bg-yellow
+	background-color: #f2c24d
+.bg-green
+	background-color: #a3d178
+.bg-dark-green
+	background-color: #8ebe5f
+.bg-blue
+	background-color: #78ccd0
+		

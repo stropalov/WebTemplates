@@ -53,24 +53,6 @@ p {
 	float: left;
 }
 
-.container {
-	width: 75%;
-	margin: 0 auto;
-}
-
-.row {
-	width: 100%;
-	margin-left: 0;
-}
-
-.row:after,
-.row:before {
-	content: "";
-	display: block;
-	clear: both;
-	height: 0;
-}
-
 .w1-2 {
 	box-sizing: border-box;
 	width: 50%;

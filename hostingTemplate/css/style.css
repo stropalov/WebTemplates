@@ -47,8 +47,8 @@ a {
 }
 
 .right {
-	float: right !important;
-	padding-right: 0 !important;
+	float: right ;
+	padding-right: 0 ;
 }
 
 .left {

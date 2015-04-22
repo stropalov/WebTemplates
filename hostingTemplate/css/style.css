@@ -47,8 +47,8 @@ a {
 }
 
 .right {
-	float: right ;
-	padding-right: 0 ;
+	float: right;
+	padding-right: 0;
 }
 
 .left {
@@ -120,6 +120,16 @@ header {
 	color: #FFF;
 }
 
+.contact_info,
+.social_links {
+	margin: 0;
+}
+
+.contact_info li,
+.social_links li{
+	padding: 5px;
+}
+
 .contact_info li {
 	display: inline-block;
 	border-left: 1px solid #323436;
@@ -135,6 +145,7 @@ header {
 
 .contact_info li a,
 .social_links li a {
+	color: #fff;
 	font-size: 9pt;
 	line-height: 0.5em;
 	letter-spacing: 0.2em;

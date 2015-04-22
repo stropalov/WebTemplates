@@ -4,10 +4,22 @@
 @media only screen and (max-width: 1200px) {}
 /* Medium Devices, Desktops */
 
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+	.contact_info,
+	.social_links {
+		text-align: center;
+		float: none;
+	}
+	.contact_info li,
+	.contact_info li:last-child {
+		border: none;
+	}
+}
 /* Small Devices, Tablets */
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+
+}
 /* Extra Small Devices, Phones */
 
 @media only screen and (max-width: 480px) {}
@@ -18,25 +30,20 @@
 /* Custom, iPhone Retina */
 
 @media only screen and (min-width: 320px) {}
+
 /* Extra Small Devices, Phones */
 
 @media only screen and (min-width: 480px) {}
 /* Small Devices, Tablets */
 
-@media only screen and (min-width: 768px) {
-	.contact_info,
-	.social_links{
-		text-align: center;	
-		float: none;
-	}
-	.contact_info li,
-	.contact_info li:last-child{
-		border: none;
-	}
-}
+@media only screen and (min-width: 768px) {}
 /* Medium Devices, Desktops */
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+	.social_links {
+		float: right;
+	}
+}
 /* Large Devices, Wide Screens */
 
 @media only screen and (min-width: 1200px) {}

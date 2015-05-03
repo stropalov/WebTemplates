@@ -7,6 +7,7 @@
 
 	<!-- INCLUDED CSS FILES-->
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -20,14 +21,24 @@
 	</div>
 	<!-- MAIN SECTION -->
 	<section class="countdown"></section>
-	<section class="subscribe">
-		<div class="section container">
-			<div class="section_header">
-				<h3>Subscribe To Our Newsletter</h3>
-				<div class="underline"></div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt suscipit eaque aliquid, magnam molestias sit temporibus expedita modi repellendus cum.</p>
-			</div>
+	<section class="subscribe section container">
+		<div class="section_header">
+			<h3>Subscribe To Our Newsletter</h3>
+			<div class="underline"></div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt suscipit eaque aliquid, magnam molestias sit temporibus expedita modi repellendus cum.</p>
 		</div>
+
+		<form class="subsc_form" action="post">
+			<div class="row">
+				<div class="col-sm-8 no-padding">
+					<i class="fa fa-envelope-o mail_icon"></i>
+					<input name="email" type="email" placeholder="Enter your email">
+				</div>
+				<div class="col-sm-4 no-padding">
+					<button type="submit">Subscribe</button>
+				</div>
+			</div>
+		</form>
 	</section>
 	<section class="features">
 		<div class="section container">

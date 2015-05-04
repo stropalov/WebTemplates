@@ -72,7 +72,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 4px; }
   .section_header .underline {
-    border-top: 1px solid #000;
+    border-top: 1px solid #2baab1;
     width: 70px;
     margin: 20px auto; }
   .section_header p {
@@ -122,8 +122,33 @@ body {
 /*    Features					 					 */
 /*-------------------------------------------------- */
 .features {
-  height: 200px;
   background-color: #eaeaea; }
+
+.feature {
+  margin-top: 10px; }
+  .feature .feature_icon {
+    border-radius: 50%;
+    background-color: #2baab1;
+    width: 80px;
+    height: 80px;
+    line-height: 95px;
+    text-align: center;
+    margin: auto; }
+    .feature .feature_icon i {
+      color: #fff;
+      font-size: 35px; }
+  .feature h4 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+    border-bottom: 1px solid #2baab1; }
+  .feature p {
+    font-size: 13px;
+    color: #686868;
+    text-align: center;
+    padding-bottom: 20px; }
 
 /*-------------------------------------------------- */
 /*    Team galery					 				 */

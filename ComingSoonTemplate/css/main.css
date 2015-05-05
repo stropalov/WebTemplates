@@ -154,7 +154,60 @@ body {
 /*    Team galery					 				 */
 /*-------------------------------------------------- */
 .team {
-  height: 200px; }
+  background-image: url("../img/bg_3.jpg");
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff; }
+  .team .member:last-child {
+    margin-right: 0; }
+  .team .member {
+    border: 1px solid #2baab1;
+    border-radius: 5px;
+    margin: 15px 20px 20px 0;
+    background: rgba(255, 255, 255, 0.3); }
+    .team .member .photo {
+      margin: 15px;
+      text-align: center; }
+      .team .member .photo img {
+        border-radius: 50%;
+        border: 1px solid #cecece; }
+    .team .member .descr {
+      margin-bottom: 10px; }
+      .team .member .descr h4 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        padding-bottom: 5px; }
+      .team .member .descr h6 {
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #2baab1; }
+      .team .member .descr p {
+        font-size: 13px;
+        color: #686868;
+        text-align: center;
+        padding: 20px;
+        color: #fff; }
+    .team .member .social_wrap {
+      text-align: center;
+      line-height: 0; }
+    .team .member ul {
+      padding: 0;
+      list-style: none; }
+      .team .member ul li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 0 3px; }
+        .team .member ul li i {
+          color: #2baab1; }
+          .team .member ul li i:hover {
+            color: rgba(43, 170, 177, 0.8); }
 
 /*-------------------------------------------------- */
 /*    Contact us					 				 */

@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Coming Soon Template</title>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- INCLUDED CSS FILES-->
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
@@ -21,24 +21,26 @@
 	</div>
 	<!-- MAIN SECTION -->
 	<section class="countdown"></section>
-	<section class="subscribe section container">
-		<div class="section_header">
-			<h3>Subscribe To Our Newsletter</h3>
-			<div class="underline"></div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt suscipit eaque aliquid, magnam molestias sit temporibus expedita modi repellendus cum.</p>
-		</div>
-
-		<form class="subsc_form" action="post">
-			<div class="row">
-				<div class="col-sm-8 no-padding">
-					<i class="fa fa-envelope-o mail_icon"></i>
-					<input name="email" type="email" placeholder="Enter your email">
-				</div>
-				<div class="col-sm-4 no-padding">
-					<button type="submit">Subscribe</button>
-				</div>
+	<section class="subscribe">
+		<div class="section container">
+			<div class="section_header">
+				<h3>Subscribe To Our Newsletter</h3>
+				<div class="underline"></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt suscipit eaque aliquid, magnam molestias sit temporibus expedita modi repellendus cum.</p>
 			</div>
-		</form>
+
+			<form class="subsc_form" action="post">
+				<div class="row">
+					<div class="col-sm-8 no-padding">
+						<i class="fa fa-envelope-o mail_icon"></i>
+						<input name="email" type="email" placeholder="Enter your email">
+					</div>
+					<div class="col-sm-4 no-padding">
+						<button type="submit">Subscribe</button>
+					</div>
+				</div>
+			</form>
+		</div>
 	</section>
 	<section class="features">
 		<div class="section container">
@@ -46,6 +48,41 @@
 				<h3>Features</h3>
 				<div class="underline"></div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eaque id totam, suscipit velit pariatur mollitia nam harum, nemo aut.</p>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="feature">
+						<div class="feature_icon"><i class="fa fa-bar-chart"></i>
+						</div>
+						<h4>Marketing</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, nesciunt!</p>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="feature">
+						<div class="feature_icon"><i class="fa fa-history "></i>
+						</div>
+						<h4>Retrospective</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, perferendis.</p>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="feature">
+						<div class="feature_icon"><i class="fa fa-code"></i>
+						</div>
+						<h4>Development</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, esse.</p>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="feature">
+						<div class="feature_icon"><i class="fa fa-cloud"></i>
+						</div>
+						<h4>Innovation</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, vitae!</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -65,9 +102,57 @@
 				<div class="underline"></div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis non natus hic, expedita quia blanditiis dolore delectus deserunt soluta magnam.</p>
 			</div>
+
+			<form>
+				<div class="row">
+					<div class="col-md-6 no-padding name_input">
+						<input name="name" type="text" placeholder="Your Name">
+					</div>
+					<div class="col-md-6 no-padding">
+						<input name="email" type="email" placeholder="Your E-mail">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 no-padding">
+						<input name="subject" type="text" placeholder="Subject">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 no-padding">
+						<textarea name="message" rows="10" placeholder="Message Text"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 btn">
+						<button>Send Message</button>
+					</div>
+				</div>
+			</form>
 		</div>
 	</section>
-	<footer class="main_footer"></footer>
+	<footer class="main_footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					&copy; 2015 John Doe
+					<div class="social_wrap">
+						<ul>
+							<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li><a href="" target="_blank"><i class="fa fa-vk"></i></a>
+							</li>
+							<li><a href="" target="_blank"><i class="fa fa-github"></i></a>
+							</li>
+							<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li><a href="" target="_blank"><i class="fa fa-facebook"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<!-- INCLUDED JS FILES-->
 	<!--[if lt IE 9]>

@@ -160,14 +160,62 @@ body {
 /*    Contact us					 				 */
 /*-------------------------------------------------- */
 .contacts {
-  height: 200px;
   background-color: #fbfbfb; }
+  .contacts input,
+  .contacts textarea {
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: solid 1px #dcdcdc;
+    background-color: #fff;
+    outline: none; }
+  .contacts textarea:focus,
+  .contacts input:focus {
+    border-color: #2baab1; }
+  .contacts input {
+    height: 40px; }
+  .contacts textarea {
+    padding-top: 10px;
+    resize: vertical; }
+  .contacts .name_input {
+    padding-right: 2px; }
+  .contacts .btn {
+    text-align: center; }
+  .contacts button {
+    border: none;
+    color: #fff;
+    background: #2baab1;
+    line-height: 40px;
+    padding: 0 25px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px; }
+    .contacts button:hover {
+      background: rgba(43, 170, 177, 0.8); }
 
 /*-------------------------------------------------- */
 /*    Footer					 					 */
 /*-------------------------------------------------- */
 .main_footer {
-  height: 200px;
-  background-color: #eaeaea; }
+  background-color: #222;
+  color: #fff;
+  padding: 30px; }
+  .main_footer .social_wrap {
+    float: right;
+    line-height: 0; }
+    .main_footer .social_wrap ul {
+      margin: 0;
+      list-style: none; }
+      .main_footer .social_wrap ul li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 0 3px; }
+        .main_footer .social_wrap ul li i {
+          color: #2baab1; }
+          .main_footer .social_wrap ul li i:hover {
+            color: rgba(43, 170, 177, 0.8); }
 
 /*# sourceMappingURL=main.css.map */

@@ -6,6 +6,7 @@
 
 $bg_white: #fbfbfb
 $bg_grey: #eaeaea
+$bg_dark: #222
 $bg_green: rgb(43,170,177)
 $bg_green_hover: rgba(43,170,177, 0.8)
 $text_grey: #686868
@@ -169,11 +170,59 @@ body
 /*    Contact us					 				*/
 /*--------------------------------------------------*/
 .contacts
-	height: 200px
 	background-color: $bg_white
+	input,
+	textarea
+		width: 100%
+		padding: 0 10px
+		margin-bottom: 3px
+		font-size: 14px
+		letter-spacing: 1px
+		border: solid 1px #dcdcdc
+		background-color: #fff
+		outline: none
+	textarea:focus,
+	input:focus
+		border-color: $bg_green
+	input
+		height: 40px
+	textarea
+		padding-top: 10px
+		resize: vertical
+	.name_input
+		padding-right: 2px
+	.btn
+		text-align: center
+	button
+		border: none
+		color: #fff
+		background: $bg_green
+		line-height: 40px
+		padding: 0 25px
+		font-size: 13px
+		text-transform: uppercase
+		font-weight: 600
+		margin: 10px
+		&:hover
+			background: $bg_green_hover
 /*--------------------------------------------------*/
 /*    Footer					 					*/
 /*--------------------------------------------------*/
 .main_footer
-	height: 200px
-	background-color: $bg_grey
+	background-color: $bg_dark
+	color: #fff
+	padding: 30px
+	.social_wrap
+		float: right
+		line-height: 0
+		ul
+			margin: 0
+			list-style: none
+			li
+				display: inline-block
+				font-size: 20px
+				padding: 0 3px
+				i
+					color: $bg_green
+					&:hover
+						color: $bg_green_hover

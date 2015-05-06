@@ -61,21 +61,17 @@
   .countdown .section_header h3 {
     font-size: 48px; }
   .countdown .clock {
-    display: inline-block;
-    text-align: center; }
+    display: inline-block; }
     .countdown .clock .dash {
       width: 200px;
-      height: 140px;
-      line-height: 30px;
-      padding: 0px 30px;
-      text-align: center; }
+      padding: 0px 30px; }
     .countdown .clock .digit {
       margin-top: 20px;
       font-size: 75px;
       line-height: 60px;
-      height: 60px;
-      width: 40px;
-      font-weight: 300;
+      height: 1em;
+      width: 0.55em;
+      font-weight: normal;
       display: inline-block;
       overflow: hidden;
       text-align: center;
@@ -83,8 +79,8 @@
     .countdown .clock .dash_title {
       position: relative;
       bottom: 0px;
-      padding-top: 5px;
-      font-weight: 400;
+      padding-top: 10px;
+      font-weight: 300;
       font-size: 16px; }
 
 body {
@@ -122,7 +118,8 @@ body {
 /*    Subscribe				 						 */
 /*-------------------------------------------------- */
 .subscribe {
-  background-color: #fbfbfb; }
+  background-color: #fbfbfb;
+  padding: 20px; }
 
 .subsc_form {
   max-width: 400px;
@@ -158,7 +155,8 @@ body {
 /*    Features					 					 */
 /*-------------------------------------------------- */
 .features {
-  background-color: #eaeaea; }
+  background-color: #eaeaea;
+  padding: 20px; }
 
 .feature {
   margin-top: 10px; }

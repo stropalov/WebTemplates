@@ -194,7 +194,8 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  color: #fff; }
+  color: #fff;
+  padding: 20px; }
   .team .member:last-child {
     margin-right: 0; }
   .team .member {
@@ -205,9 +206,6 @@ body {
     .team .member .photo {
       margin: 15px;
       text-align: center; }
-      .team .member .photo img {
-        border-radius: 50%;
-        border: 1px solid #cecece; }
     .team .member .descr {
       margin-bottom: 10px; }
       .team .member .descr h4 {
@@ -247,7 +245,8 @@ body {
 /*    Contact us					 				 */
 /*-------------------------------------------------- */
 .contacts {
-  background-color: #fbfbfb; }
+  background-color: #fbfbfb;
+  padding: 20px; }
   .contacts form {
     margin: 10px; }
   .contacts input,

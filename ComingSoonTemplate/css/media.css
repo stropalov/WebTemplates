@@ -9,7 +9,7 @@
 		width: 100%;
 	}
 	.countdown .clock .dash {
-		padding: 0px 20px;
+		padding: 0 20px;
 	}
 	.countdown .clock .dash .digit {
 		font-size: 65px

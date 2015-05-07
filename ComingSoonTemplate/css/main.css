@@ -297,6 +297,7 @@ body {
     line-height: 0; }
     .main_footer .social_wrap ul {
       margin: 0;
+      float: right;
       list-style: none; }
       .main_footer .social_wrap ul li {
         display: inline-block;

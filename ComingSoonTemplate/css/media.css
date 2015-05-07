@@ -4,7 +4,20 @@
 @media only screen and (max-width: 1200px) {}
 /* Medium Devices, Desktops */
 
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+	.countdown .clock {
+		width: 100%;
+	}
+	.countdown .clock .dash {
+		padding: 0px 20px;
+	}
+	.countdown .clock .dash .digit {
+		font-size: 65px
+	}
+	.contacts .name_input {
+		padding-right: 0;
+	}
+}
 /* Small Devices, Tablets */
 
 @media only screen and (max-width: 768px) {}

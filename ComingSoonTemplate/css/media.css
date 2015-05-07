@@ -21,22 +21,33 @@
 /* Small Devices, Tablets */
 
 @media only screen and (max-width: 768px) {
-	.main_footer .copyright{
-		text-align: center;	
+	.main_footer .copyright {
+		text-align: center;
 	}
 	.main_footer .social_wrap ul {
 		float: none;
-		text-align: center;	
+		text-align: center;
 		padding-left: 0;
 		margin-top: 20px;
 	}
-	.main_footer .social_wrap ul li{
-		font-size: 30px;	
+	.main_footer .social_wrap ul li {
+		font-size: 30px;
+	}
+	.team .member,
+	.team .member:last-child {
+		width: 300px;
+		margin: 20px auto;
 	}
 }
 /* Extra Small Devices, Phones */
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+	.team .member,
+	.team .member:last-child {
+		width: 250px;
+		margin: 20px auto;
+	}
+}
 /* Custom, iPhone Retina */
 
 @media only screen and (max-width: 320px) {}

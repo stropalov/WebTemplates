@@ -196,50 +196,105 @@ body {
   background-size: cover;
   color: #fff;
   padding: 20px; }
-  .team .member:last-child {
+  .team .member_back:last-child,
+  .team .member_front:last-child {
     margin-right: 0; }
-  .team .member {
+  .team .member_back,
+  .team .member_front {
     border: 1px solid #2baab1;
     border-radius: 5px;
     margin: 15px 20px 20px 0;
     background: rgba(0, 0, 0, 0.4); }
-    .team .member .photo {
+    .team .member_back .photo,
+    .team .member_front .photo {
       margin: 15px;
       text-align: center; }
-    .team .member .descr {
+    .team .member_back .descr,
+    .team .member_front .descr {
       margin-bottom: 10px; }
-      .team .member .descr h4 {
+      .team .member_back .descr h4,
+      .team .member_front .descr h4 {
         text-transform: uppercase;
         text-align: center;
         font-size: 18px;
         font-weight: 700;
         padding-bottom: 5px; }
-      .team .member .descr h6 {
+      .team .member_back .descr h6,
+      .team .member_front .descr h6 {
         font-size: 15px;
         font-weight: 600;
         text-align: center;
         padding-bottom: 5px;
         border-bottom: 1px solid #2baab1; }
-      .team .member .descr p {
+      .team .member_back .descr p,
+      .team .member_front .descr p {
         font-size: 13px;
         color: #686868;
         text-align: center;
         padding: 20px;
         color: #fff; }
-    .team .member .social_wrap {
+    .team .member_back .social_wrap,
+    .team .member_front .social_wrap {
       text-align: center;
       line-height: 0; }
-    .team .member ul {
+    .team .member_back ul,
+    .team .member_front ul {
       padding: 0;
       list-style: none; }
-      .team .member ul li {
+      .team .member_back ul li,
+      .team .member_front ul li {
         display: inline-block;
         font-size: 20px;
         padding: 0 3px; }
-        .team .member ul li i {
+        .team .member_back ul li i,
+        .team .member_front ul li i {
           color: #2baab1; }
-          .team .member ul li i:hover {
+          .team .member_back ul li i:hover,
+          .team .member_front ul li i:hover {
             color: rgba(43, 170, 177, 0.8); }
+
+/*-------------------------------------------------- */
+/*    Rotating team cards			 				 */
+/*-------------------------------------------------- */
+.team .member_container {
+  perspective: 800px;
+  height: 400px;
+  margin-bottom: 30px; }
+  .team .member_container:hover .member_card {
+    transform: rotateY(180deg); }
+  .team .member_container .member_card {
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    position: relative; }
+    .team .member_container .member_card .member_front {
+      z-index: 2; }
+    .team .member_container .member_card .member_back {
+      transform: rotateY(180deg);
+      z-index: 3;
+      padding: 20px 10px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 2em; }
+    .team .member_container .member_card .member_back,
+    .team .member_container .member_card .member_front {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 400px; }
+
+.grey {
+  background-color: #7E7776 !important; }
+
+.yellow {
+  background-color: #DBA047 !important; }
+
+.red {
+  background-color: #924B44 !important; }
+
+.green {
+  background-color: #789256 !important; }
 
 /*-------------------------------------------------- */
 /*    Contact us					 				 */

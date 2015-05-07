@@ -208,9 +208,11 @@ body
 	background-size: cover
 	color: #fff
 	padding: 20px
-	.member:last-child
+	.member_back:last-child,
+	.member_front:last-child
 		margin-right: 0
-	.member
+	.member_back,
+	.member_front
 		border: 1px solid $bg_green
 		border-radius: 5px
 		margin: 15px 20px 20px 0
@@ -252,6 +254,48 @@ body
 					color: $bg_green
 					&:hover
 						color: $bg_green_hover
+	
+/*--------------------------------------------------*/
+/*    Rotating team cards			 				*/
+/*--------------------------------------------------*/	
+.team
+	.member_container
+		perspective: 800px
+		height: 400px
+		margin-bottom: 30px
+		&:hover 
+			.member_card
+				transform: rotateY( 180deg )
+		.member_card
+			transition: transform .5s
+			transform-style: preserve-3d
+			position: relative
+			.member_front
+				z-index: 2
+			.member_back
+				transform: rotateY( 180deg )
+				z-index: 3
+				padding: 20px 10px
+				text-align: center
+				font-size: 14px
+				font-weight: 300
+				line-height: 2em
+			.member_back,
+			.member_front
+				backface-visibility: hidden
+				position: absolute
+				top: 0
+				left: 0
+				height: 400px
+
+.grey
+	background-color: #7E7776 !important
+.yellow
+	background-color: #DBA047 !important
+.red
+	background-color: #924B44 !important
+.green
+	background-color: #789256 !important
 /*--------------------------------------------------*/
 /*    Contact us					 				*/
 /*--------------------------------------------------*/

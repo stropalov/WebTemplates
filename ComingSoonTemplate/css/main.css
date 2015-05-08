@@ -176,8 +176,11 @@ body {
     text-align: center;
     font-size: 18px;
     font-weight: 700;
-    padding: 10px;
-    border-bottom: 1px solid #2baab1; }
+    padding: 10px; }
+  .feature .underline {
+    border-bottom: 1px solid #2baab1;
+    width: 50%;
+    margin: 10px auto; }
   .feature p {
     font-size: 13px;
     color: #686868;
@@ -265,9 +268,13 @@ body {
   .team .member_container .member_card {
     transition: transform 0.5s;
     transform-style: preserve-3d;
-    position: relative; }
+    position: relative;
+    height: inherit;
+    margin: 0 auto; }
     .team .member_container .member_card .member_front {
-      z-index: 2; }
+      z-index: 2;
+      position: relative;
+      margin: auto; }
     .team .member_container .member_card .member_back {
       transform: rotateY(180deg);
       z-index: 3;
@@ -275,7 +282,8 @@ body {
       text-align: center;
       font-size: 14px;
       font-weight: 300;
-      line-height: 2em; }
+      line-height: 2em;
+      margin-top: 0; }
     .team .member_container .member_card .member_back,
     .team .member_container .member_card .member_front {
       backface-visibility: hidden;

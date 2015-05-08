@@ -33,8 +33,11 @@
 	.main_footer .social_wrap ul li {
 		font-size: 30px;
 	}
-	.team .member,
-	.team .member:last-child {
+	.member_card,
+	.team .member_front,
+	.team .member_back,
+	.team .member_front:last-child,
+	.team .member_back:last-child {
 		width: 300px;
 		margin: 20px auto;
 	}
@@ -42,8 +45,11 @@
 /* Extra Small Devices, Phones */
 
 @media only screen and (max-width: 480px) {
-	.team .member,
-	.team .member:last-child {
+	.member_card,
+	.team .member_front,
+	.team .member_back,
+	.team .member_front:last-child,
+	.team .member_back:last-child {
 		width: 250px;
 		margin: 20px auto;
 	}

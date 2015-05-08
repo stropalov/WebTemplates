@@ -190,7 +190,10 @@ body
 		font-size: 18px
 		font-weight: 700
 		padding: 10px
+	.underline
 		border-bottom: 1px solid $bg_green
+		width: 50%
+		margin: 10px auto
 	p
 		font-size: 13px
 		color: $text_grey
@@ -263,15 +266,19 @@ body
 		perspective: 800px
 		height: 400px
 		margin-bottom: 30px
-		&:hover 
+		&:hover
 			.member_card
 				transform: rotateY( 180deg )
 		.member_card
 			transition: transform .5s
 			transform-style: preserve-3d
 			position: relative
+			height: inherit
+			margin: 0 auto
 			.member_front
 				z-index: 2
+				position: relative
+				margin: auto
 			.member_back
 				transform: rotateY( 180deg )
 				z-index: 3
@@ -280,6 +287,7 @@ body
 				font-size: 14px
 				font-weight: 300
 				line-height: 2em
+				margin-top: 0
 			.member_back,
 			.member_front
 				backface-visibility: hidden

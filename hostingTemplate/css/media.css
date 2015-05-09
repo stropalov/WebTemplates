@@ -18,7 +18,18 @@
 /* Small Devices, Tablets */
 
 @media only screen and (max-width: 768px) {
-
+	.footer_bottom .copyright {
+		text-align: center;
+	}
+	.footer_bottom .social_wrap ul {
+		float: none;
+		text-align: center;
+		padding-left: 0;
+		margin-top: 20px;
+	}
+	.footer_bottom .social_wrap ul li {
+		font-size: 30px;
+	}
 }
 /* Extra Small Devices, Phones */
 

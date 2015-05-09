@@ -594,9 +594,13 @@ input[type="submit"]:hover {
 
 .footer_bottom {
 	background-color: #1D1F21;
-	margin-top: 2em;
+	padding: 30px
 }
 
 .copyright {
 	font-size: 10pt;
+}
+
+.footer_bottom .social_wrap{
+		float: right
 }

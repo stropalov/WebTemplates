@@ -13,6 +13,9 @@ body {
 ul li {
   list-style: none;
 }
+ul li a:hover {
+  color: #3c9b27;
+}
 a {
   color: #fff;
   text-decoration: none;
@@ -42,10 +45,6 @@ header {
   padding: 0 0.5em;
   vertical-align: middle;
 }
-.contact_info li a:hover,
-.social_links li a:hover {
-  color: #3c9b27;
-}
 .contact_info li a .fa,
 .social_links li a .fa {
   margin-right: 0.7em;
@@ -55,6 +54,43 @@ header {
 }
 .contact_info li:last-child {
   border-right: 1px solid #323436;
+}
+/*========================================================================*/
+/*	Footer   															  */
+/*========================================================================*/
+footer {
+  background-color: #32353a;
+  color: #8b8b8b;
+  padding-top: 2em;
+  font-size: 12pt;
+}
+.footer_widget h3 {
+  font-weight: 500;
+  margin-bottom: 2em;
+  font-size: 16pt;
+  color: #fff;
+}
+.footer_widget p {
+  font-size: 12pt;
+  text-align: justify;
+  line-height: 1.5em;
+}
+.footer_widget ul li {
+  padding-bottom: 0.5em;
+}
+.footer_widget ul li a {
+  color: #8b8b8b;
+}
+.footer_widget ul li a:hover {
+  color: #3c9b27;
+  text-decoration: none;
+}
+.footer_widget ul li:before {
+  font-family: 'FontAwesome';
+  content: "\f061";
+  color: #3c9b27;
+  font-weight: bold;
+  margin-right: 0.5em;
 }
 /*========================================================================*/
 /*	Footer bottom  														  */

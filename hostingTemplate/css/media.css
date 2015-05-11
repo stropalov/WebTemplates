@@ -30,6 +30,11 @@
 	.footer_bottom .social_wrap ul li {
 		font-size: 30px;
 	}
+	
+	.footer_widget h3,
+	.footer_widget p{
+		text-align: center;
+	}
 }
 /* Extra Small Devices, Phones */
 

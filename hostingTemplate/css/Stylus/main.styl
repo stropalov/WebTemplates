@@ -1,6 +1,8 @@
 border_dark = #323436
+bcg_dark = #32353A
 main_bcg = #1D1F21
 theme_green = #3C9B27
+text_grey = #8b8b8b
 /*========================================================================*/
 /*	HTML elements														  */
 /*========================================================================*/
@@ -15,9 +17,11 @@ body
 	display: block
 
 
-ul li 
-	list-style: none
-
+ul 
+	li 
+		list-style: none
+		a:hover
+			color: theme_green
 a 
 	color: #FFF
 	text-decoration: none
@@ -43,8 +47,6 @@ header
 			letter-spacing: 0.2em
 			padding: 0 0.5em
 			vertical-align: middle	
-			&:hover
-				color: #3C9B27
 			.fa
 				margin-right: 0.7em
 .contact_info 
@@ -52,6 +54,41 @@ header
 		border-left: 1px solid border_dark
 		&:last-child 
 			border-right: 1px solid border_dark
+
+/*========================================================================*/
+/*	Footer   															  */
+/*========================================================================*/
+
+footer
+	background-color: bcg_dark
+	color: text_grey
+	padding-top: 2em
+	font-size: 12pt
+
+.footer_widget
+	h3 
+		font-weight: 500
+		margin-bottom: 2em
+		font-size: 16pt
+		color: #FFF
+	p 
+		font-size: 12pt
+		text-align: justify
+		line-height: 1.5em
+	ul 
+		li
+			padding-bottom: 0.5em
+			a 
+				color: text_grey
+				&:hover
+					color: theme_green
+					text-decoration: none
+			&:before 
+				font-family: 'FontAwesome'
+				content: "\f061"
+				color: #3C9B27
+				font-weight: bold
+				margin-right: 0.5em
 
 /*========================================================================*/
 /*	Footer bottom  														  */

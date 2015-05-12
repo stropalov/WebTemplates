@@ -30,10 +30,13 @@
 	.footer_bottom .social_wrap ul li {
 		font-size: 30px;
 	}
-	
-	.footer_widget h3,
-	.footer_widget p{
+	.footer_widget h3 {
 		text-align: center;
+	}
+	.footer_widget p,
+	.footer_widget ul {
+		width: 180px;
+		margin: auto;
 	}
 }
 /* Extra Small Devices, Phones */
@@ -46,7 +49,6 @@
 /* Custom, iPhone Retina */
 
 @media only screen and (min-width: 320px) {}
-
 /* Extra Small Devices, Phones */
 
 @media only screen and (min-width: 480px) {}

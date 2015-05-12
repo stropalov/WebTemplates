@@ -1,5 +1,6 @@
 border_dark = #323436
 bcg_dark = #32353A
+bcg_grey = #F5F5F5
 main_bcg = #1D1F21
 theme_green = #3C9B27
 text_grey = #8b8b8b
@@ -22,9 +23,6 @@ ul
 		list-style: none
 		a:hover
 			color: theme_green
-a 
-	color: #FFF
-	text-decoration: none
 
 /*========================================================================*/
 /*	Header    															  */
@@ -54,6 +52,51 @@ header
 		border-left: 1px solid border_dark
 		&:last-child 
 			border-right: 1px solid border_dark
+
+/*========================================================================*/
+/*	Plans section														  */
+/*========================================================================*/
+
+.plans 
+	background-color: bcg_grey
+	color: text_grey
+	padding: 3em 0
+	font-size: 12pt
+	.plan 
+		height: 100%
+		text-align: center
+		background-color: #fff
+		margin-bottom: 2em
+		.plan_top 
+			padding: 0.5em
+			h3 
+				font-size: 19pt
+				font-weight: 500
+				line-height: 1.5em
+				color: theme_green
+			p 
+				font-size: 16pt
+				font-weight: 500
+				color: #000
+				line-height: 1.1em
+		.plan_bottom
+			padding: 0 4em
+			ul 
+				li
+					border-bottom: 1px solid bcg_grey
+					padding: 0.5em
+		.plan_button
+			margin: 2.7em auto
+			width: 40%
+			background-color: #3c9b27
+			padding: 0.6em 1.5em
+			border-radius: 10px
+			a 
+				color: #FFF
+				text-decoration: none
+			&:hover 
+				opacity: 0.8
+				cursor: pointer
 
 /*========================================================================*/
 /*	Footer   															  */

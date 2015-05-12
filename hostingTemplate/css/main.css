@@ -65,6 +65,8 @@ header {
   text-align: center;
   background-color: #fff;
   margin-bottom: 2em;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 .plans .plan .plan_top {
   padding: 0.5em;
@@ -90,10 +92,10 @@ header {
 }
 .plans .plan .plan_button {
   margin: 2.7em auto;
-  width: 40%;
+  width: 50%;
   background-color: #3c9b27;
   padding: 0.6em 1.5em;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 .plans .plan .plan_button a {
   color: #fff;

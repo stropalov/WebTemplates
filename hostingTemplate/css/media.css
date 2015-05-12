@@ -1,7 +1,12 @@
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+	.plans .plan {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width: 992px) {
@@ -13,6 +18,11 @@
 	.contact_info li,
 	.contact_info li:last-child {
 		border: none;
+	}
+	.plans .plan {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 /* Small Devices, Tablets */
@@ -41,10 +51,18 @@
 }
 /* Extra Small Devices, Phones */
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+	.plans .plan {
+		width: 75%;
+	}
+}
 /* Custom, iPhone Retina */
 
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 320px) {
+	.plans .plan {
+		width: 95%;
+	}
+}
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 

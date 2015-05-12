@@ -4,6 +4,7 @@ bcg_grey = #F5F5F5
 main_bcg = #1D1F21
 theme_green = #3C9B27
 text_grey = #8b8b8b
+bcg_dark_grey = #EDEAEA
 /*========================================================================*/
 /*	HTML elements														  */
 /*========================================================================*/
@@ -99,6 +100,54 @@ header
 			&:hover 
 				opacity: 0.8
 				cursor: pointer
+
+/*========================================================================*/
+/*	Blog posts section													  */
+/*========================================================================*/
+
+.blog_posts 
+	background-color: bcg_dark_grey
+	color: text_grey
+	padding: 3em 0
+	font-size: 12pt
+	min-height: 500px
+	.title
+		text-align: center
+		margin-bottom: 3em
+		h3 
+			font-size: 20pt
+			letter-spacing: 0.2em
+			color: #252525
+	.blog_post
+		height: 100%
+		background-color: #fff
+		margin-bottom: 3em
+		figure 
+			margin-bottom: 0.7em
+			img 
+				width: 100%
+				height: auto
+		.post 
+			margin: 1em 0
+			padding: 0 2em
+			h4 
+				text-align: center
+				font-size: 14pt
+				line-height: 1.5em
+				margin-bottom: 1em
+			p 
+				text-align: justify
+				line-height: 1.5em
+				padding-bottom: 1em
+			.post_footer 
+				a 
+					font-size: 9pt
+					color: #000
+				i 
+					font-family: 'FontAwesome'
+					font-size: 9pt
+					color: theme_green
+					margin-right: 0.5em
 
 /*========================================================================*/
 /*	Footer   															  */

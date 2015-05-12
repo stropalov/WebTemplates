@@ -19,11 +19,13 @@
 	.contact_info li:last-child {
 		border: none;
 	}
-	.plans .plan {
+	.plans .plan,
+	.blog_posts  .blog_post{
 		width: 60%;
 		margin-left: auto;
 		margin-right: auto;
 	}
+	
 }
 /* Small Devices, Tablets */
 
@@ -52,14 +54,16 @@
 /* Extra Small Devices, Phones */
 
 @media only screen and (max-width: 480px) {
-	.plans .plan {
+	.plans .plan,
+	.blog_posts  .blog_post{
 		width: 75%;
 	}
 }
 /* Custom, iPhone Retina */
 
 @media only screen and (max-width: 320px) {
-	.plans .plan {
+	.plans .plan,
+	.blog_posts  .blog_post{
 		width: 95%;
 	}
 }

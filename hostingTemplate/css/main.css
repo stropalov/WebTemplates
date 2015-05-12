@@ -106,6 +106,62 @@ header {
   cursor: pointer;
 }
 /*========================================================================*/
+/*	Blog posts section													  */
+/*========================================================================*/
+.blog_posts {
+  background-color: #edeaea;
+  color: #8b8b8b;
+  padding: 3em 0;
+  font-size: 12pt;
+  min-height: 500px;
+}
+.blog_posts .title {
+  text-align: center;
+  margin-bottom: 3em;
+}
+.blog_posts .title h3 {
+  font-size: 20pt;
+  letter-spacing: 0.2em;
+  color: #252525;
+}
+.blog_posts .blog_post {
+  height: 100%;
+  background-color: #fff;
+  margin-bottom: 3em;
+}
+.blog_posts .blog_post figure {
+  margin-bottom: 0.7em;
+}
+.blog_posts .blog_post figure img {
+  width: 100%;
+  height: auto;
+}
+.blog_posts .blog_post .post {
+  margin: 1em 0;
+  padding: 0 2em;
+}
+.blog_posts .blog_post .post h4 {
+  text-align: center;
+  font-size: 14pt;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+.blog_posts .blog_post .post p {
+  text-align: justify;
+  line-height: 1.5em;
+  padding-bottom: 1em;
+}
+.blog_posts .blog_post .post .post_footer a {
+  font-size: 9pt;
+  color: #000;
+}
+.blog_posts .blog_post .post .post_footer i {
+  font-family: 'FontAwesome';
+  font-size: 9pt;
+  color: #3c9b27;
+  margin-right: 0.5em;
+}
+/*========================================================================*/
 /*	Footer   															  */
 /*========================================================================*/
 footer {

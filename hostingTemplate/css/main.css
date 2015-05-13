@@ -52,6 +52,65 @@ header {
   border-right: 1px solid #323436;
 }
 /*========================================================================*/
+/*	Features section													  */
+/*========================================================================*/
+.features {
+  background-color: #fafafa;
+  color: #8b8b8b;
+  padding: 3em 0;
+  font-size: 12pt;
+}
+.features h3 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.features .feature_left h4,
+.features .feature_right h4 {
+  font-size: 14pt;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  color: #333;
+}
+.features .feature_left p,
+.features .feature_right p {
+  line-height: 1.3em;
+}
+.features .feature_left span,
+.features .feature_right span {
+  margin: 0.5em 0 1em 0;
+  text-align: center;
+  color: #fff;
+}
+.features .feature_left span i,
+.features .feature_right span i {
+  font-size: 1.1em;
+}
+.features .feature_left span i:before,
+.features .feature_right span i:before {
+  background-color: #3c9b27;
+  border-radius: 100%;
+  height: 3.5em;
+  width: 3.5em;
+  line-height: 3.5em;
+  display: block;
+  font-size: 1.75em;
+  position: relative;
+  text-align: center;
+  top: 0;
+}
+.features .feature_left h4,
+.features .feature_left p {
+  text-align: right;
+}
+.features .feature_left span {
+  margin-left: 2em;
+  float: right;
+}
+.features .feature_right span {
+  margin-right: 2em;
+  float: left;
+}
+/*========================================================================*/
 /*	Plans section														  */
 /*========================================================================*/
 .plans {

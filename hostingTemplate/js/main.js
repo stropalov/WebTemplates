@@ -20,4 +20,24 @@
 
 		});
 	});
+
+
+
 })(jQuery);
+
+
+
+$(document).ready(function () {
+
+	$("#owl-example").owlCarousel({
+		items: 1,
+		nav: true,
+		responsive: {
+			0: {
+				items: 1,
+				nav: true
+			}
+		},
+		navText: ""
+	});
+});

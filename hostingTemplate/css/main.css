@@ -119,6 +119,10 @@ header {
   padding: 3em 0;
   font-size: 12pt;
 }
+.plans h3 {
+  text-align: center;
+  margin-bottom: 2em;
+}
 .plans .plan {
   height: 100%;
   text-align: center;
@@ -163,6 +167,26 @@ header {
 .plans .plan .plan_button:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+/*========================================================================*/
+/*	Reviews section														  */
+/*========================================================================*/
+.reviews {
+  background-color: #fafafa;
+  color: #8b8b8b;
+  padding: 3em 0;
+  font-size: 12pt;
+}
+.reviews h3 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.reviews .slides {
+  width: 50%;
+  margin: auto;
+}
+.reviews .slides .review {
+  text-align: center;
 }
 /*========================================================================*/
 /*	Blog posts section													  */

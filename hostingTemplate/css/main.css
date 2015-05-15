@@ -185,14 +185,39 @@ header {
   width: 50%;
   margin: auto;
 }
-.reviews .slides .review {
-  text-align: center;
+.reviews .slides .review .comment {
+  background-color: #f3f3f3;
+  padding: 1.5em;
+  text-align: justify;
+  position: relative;
+}
+.reviews .slides .review .comment .fa {
+  text-align: left;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+.reviews .slides .review .comment blockquote {
+  border: none;
+  margin: 0;
+}
+.reviews .slides .review .comment_info {
+  text-align: left;
+  width: 30%;
+  display: inline-block;
+  margin: 1em 0 0 1em;
+}
+.reviews .slides .review .comment_info img {
+  width: 80%;
+}
+.reviews .slides .review .client_info {
+  display: inline-block;
 }
 /*========================================================================*/
 /*	Blog posts section													  */
 /*========================================================================*/
 .blog_posts {
-  background-color: #edeaea;
+  background-color: #f3f3f3;
   color: #8b8b8b;
   padding: 3em 0;
   font-size: 12pt;

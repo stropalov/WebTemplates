@@ -4,7 +4,7 @@ bcg_grey = #F5F5F5
 main_bcg = #1D1F21
 theme_green = #3C9B27
 text_grey = #8b8b8b
-bcg_dark_grey = #EDEAEA
+bcg_dark_grey = #f3f3f3
 bcg_light = #FAFAFA
 /*========================================================================*/
 /*	HTML elements														  */
@@ -172,7 +172,31 @@ header
 		width: 50%
 		margin: auto
 		.review
-			text-align: center
+			.comment
+				background-color: bcg_dark_grey
+				padding: 1.5em
+				text-align: justify
+				position: relative
+				.fa
+					text-align: left
+					position: absolute
+					left: 10%
+					top: 10%
+				blockquote
+					border: none
+					margin: 0
+			.comment_info
+				text-align: left
+				width: 30%
+				display: inline-block
+				margin: 1em 0 0 1em 
+				img
+					width: 80%
+			.client_info
+				display: inline-block
+				
+			
+	
 		
 /*========================================================================*/
 /*	Blog posts section													  */

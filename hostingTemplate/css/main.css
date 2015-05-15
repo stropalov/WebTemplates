@@ -201,6 +201,16 @@ header {
   border: none;
   margin: 0;
 }
+.reviews .slides .review .comment:after {
+  content: "";
+  position: absolute;
+  border-top: 7px solid #f3f3f3;
+  border-left: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid transparent;
+  bottom: -13px;
+  left: 13%;
+}
 .reviews .slides .review .comment_info {
   text-align: left;
   width: 30%;

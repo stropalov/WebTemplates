@@ -38,6 +38,9 @@
 	.features .feature_left p {
 		text-align: left;
 	}
+	.reviews .slides {
+		width: 65%;
+	}
 }
 /* Small Devices, Tablets */
 
@@ -62,17 +65,31 @@
 		width: 180px;
 		margin: auto;
 	}
+	.reviews .slides {
+		width: 75%;
+	}
+	.reviews .slides .owl-controls {
+		bottom: 21%;
+	}
 }
 /* Extra Small Devices, Phones */
 
 @media only screen and (max-width: 480px) {
 	.plans .plan,
 	.blog_posts .blog_post {
-		width: 75%;
+		width: 80%;
 	}
 	.features .feature_left span,
 	.features .feature_right span {
 		float: none;
+	}
+	.reviews .slides {
+		width: 95%;
+	}
+	
+	.reviews .slides .owl-controls {
+		right: 4%;
+		bottom: 11%;
 	}
 }
 /* Custom, iPhone Retina */

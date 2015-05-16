@@ -30,14 +30,10 @@
 $(document).ready(function () {
 
 	$("#owl-example").owlCarousel({
-		items: 1,
-		nav: true,
-		responsive: {
-			0: {
-				items: 1,
-				nav: true
-			}
-		},
-		navText: ""
+		autoPlay: 4000,
+		slideSpeed: 800,
+		navigation: false,
+		pagination: true,
+		singleItem: true,
 	});
 });

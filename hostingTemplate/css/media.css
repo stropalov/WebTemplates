@@ -41,6 +41,15 @@
 	.reviews .slides {
 		width: 65%;
 	}
+	.flexslider .slide_text {
+		top: 40%
+	}
+	.flexslider .slide_text h1 {
+		font-size: 20pt;
+	}
+	.flexslider .slide_text p {
+		font-size: 15pt;
+	}
 }
 /* Small Devices, Tablets */
 
@@ -71,6 +80,9 @@
 	.reviews .slides .owl-controls {
 		bottom: 21%;
 	}
+	.flexslider .slide_text {
+		top: 30%
+	}
 }
 /* Extra Small Devices, Phones */
 
@@ -86,10 +98,18 @@
 	.reviews .slides {
 		width: 95%;
 	}
-	
 	.reviews .slides .owl-controls {
 		right: 4%;
 		bottom: 11%;
+	}
+	.flexslider .slide_text {
+		top: 20%
+	}
+	.flexslider .slide_text h1 {
+		font-size: 18pt;
+	}
+	.flexslider .slide_text p {
+		font-size: 12pt;
 	}
 }
 /* Custom, iPhone Retina */

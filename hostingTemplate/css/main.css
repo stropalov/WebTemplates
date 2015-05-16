@@ -52,6 +52,46 @@ header {
   border-right: 1px solid #323436;
 }
 /*========================================================================*/
+/*	Slider section: ;													  */
+/*========================================================================*/
+.flexslider {
+  border: none !important;
+  margin-bottom: 0 !important;
+}
+.flexslider img {
+  position: relative;
+}
+.flexslider .slide_text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+}
+.flexslider .slide_text h1 {
+  font-size: 26pt;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin-bottom: 0.7em;
+  color: #fff;
+}
+.flexslider .slide_text p {
+  font-size: 19pt;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.1em;
+  color: #fff;
+}
+.flexslider .flex-control-nav {
+  bottom: 7%;
+  z-index: 10;
+}
+.flexslider .flex-control-nav li a {
+  background: #3c9b27;
+}
+.flexslider .flex-control-nav li .flex-active {
+  background: #24c200;
+}
+/*========================================================================*/
 /*	Features section													  */
 /*========================================================================*/
 .features {

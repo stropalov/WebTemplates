@@ -1,4 +1,5 @@
 border_dark = #323436
+border_light = #dfdfdf
 bcg_dark = #32353A
 bcg_grey = #F5F5F5
 main_bcg = #1D1F21
@@ -54,6 +55,92 @@ header
 		border-left: 1px solid border_dark
 		&:last-child 
 			border-right: 1px solid border_dark
+
+/*========================================================================*/
+/*	Navigation section: 												  */
+/*========================================================================*/
+
+.header_menu
+	background-color: #F3F3F3
+	height: 3.7em
+	.logo
+		height: 3.7em
+		display: table
+		padding-left: 1em
+		a 
+			font-size: 20pt
+			color: #33353D
+			display: table-cell
+			vertical-align: middle
+			.fa 
+				font-family: 'FontAwesome'
+				font-size: 19pt
+				color: #3C9B27
+				margin-right: 0.5em
+			&:hover
+				text-decoration: none
+	nav
+		height: inherit
+		.main_menu 
+			height: inherit
+			> li 
+				display: inline-block
+				float: left
+				height: inherit
+				position: relative
+				> a:hover 
+					background-color: #42454A
+					color: #FFF
+					text-decoration: none
+				> a 
+					display: table-cell
+					height: inherit
+					color: #33353D
+					padding: 0 1em
+					font-size: 16pt
+					line-height: 2.5em
+					text-align: center
+					border-right: 1px solid border_light
+					vertical-align: middle
+					span:after 
+						width: 0
+						height: 0
+						border: 0.313em solid transparent
+						border-bottom: none
+						border-top-color: #3C9B27
+						content: ''
+						vertical-align: middle
+						display: inline-block
+						position: relative
+						right: -0.313em
+				&:first-child > a 
+					border-left: 1px solid border_light
+			li 
+				ul 
+					background-color: #42454A
+					display: none
+					position: absolute
+					top: 97%
+					li a:hover
+					&:not(:hover) li.active a
+						background-color: #FFF
+						color: #33353D
+					a 	
+						display: block
+						width: 100%
+						color: #FFF
+						font-size: 14pt
+						height: inherit
+						border-top: 1px solid border_light
+						line-height: 2.5em
+						padding: 0 1em
+				&:hover ul 
+					display: block
+					width: 100%
+					left: 0
+					right: 0
+					z-index: 100
+
 
 /*========================================================================*/
 /*	Slider section: ;													  */

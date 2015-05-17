@@ -52,6 +52,104 @@ header {
   border-right: 1px solid #323436;
 }
 /*========================================================================*/
+/*	Navigation section: 												  */
+/*========================================================================*/
+.header_menu {
+  background-color: #f3f3f3;
+  height: 3.7em;
+}
+.header_menu .logo {
+  height: 3.7em;
+  display: table;
+  padding-left: 1em;
+}
+.header_menu .logo a {
+  font-size: 20pt;
+  color: #33353d;
+  display: table-cell;
+  vertical-align: middle;
+}
+.header_menu .logo a .fa {
+  font-family: 'FontAwesome';
+  font-size: 19pt;
+  color: #3c9b27;
+  margin-right: 0.5em;
+}
+.header_menu .logo a:hover {
+  text-decoration: none;
+}
+.header_menu nav {
+  height: inherit;
+}
+.header_menu nav .main_menu {
+  height: inherit;
+}
+.header_menu nav .main_menu > li {
+  display: inline-block;
+  float: left;
+  height: inherit;
+  position: relative;
+}
+.header_menu nav .main_menu > li > a:hover {
+  background-color: #42454a;
+  color: #fff;
+  text-decoration: none;
+}
+.header_menu nav .main_menu > li > a {
+  display: table-cell;
+  height: inherit;
+  color: #33353d;
+  padding: 0 1em;
+  font-size: 16pt;
+  line-height: 2.5em;
+  text-align: center;
+  border-right: 1px solid #dfdfdf;
+  vertical-align: middle;
+}
+.header_menu nav .main_menu > li > a span:after {
+  width: 0;
+  height: 0;
+  border: 0.313em solid transparent;
+  border-bottom: none;
+  border-top-color: #3c9b27;
+  content: '';
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  right: -0.313em;
+}
+.header_menu nav .main_menu > li:first-child > a {
+  border-left: 1px solid #dfdfdf;
+}
+.header_menu nav .main_menu li ul {
+  background-color: #42454a;
+  display: none;
+  position: absolute;
+  top: 97%;
+}
+.header_menu nav .main_menu li ul li a:hover,
+.header_menu nav .main_menu li ul:not(:hover) li.active a {
+  background-color: #fff;
+  color: #33353d;
+}
+.header_menu nav .main_menu li ul a {
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-size: 14pt;
+  height: inherit;
+  border-top: 1px solid #dfdfdf;
+  line-height: 2.5em;
+  padding: 0 1em;
+}
+.header_menu nav .main_menu li:hover ul {
+  display: block;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+/*========================================================================*/
 /*	Slider section: ;													  */
 /*========================================================================*/
 .flexslider {

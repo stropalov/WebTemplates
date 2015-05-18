@@ -79,14 +79,17 @@ header {
   text-decoration: none;
 }
 .header_menu .show-menu {
-  color: #000;
-  background: #19c589;
-  text-align: center;
-  width: 100px;
-  height: 40px;
-  padding: 10px 0;
+  padding: 10px 2em;
   display: none;
   float: right;
+}
+.header_menu .show-menu:before {
+  font-family: 'FontAwesome';
+  content: "\f0c9";
+  font-size: 20pt;
+  color: #3c9b27;
+  font-weight: bold;
+  margin-right: 0.5em;
 }
 .header_menu input[type=checkbox] {
   display: none;

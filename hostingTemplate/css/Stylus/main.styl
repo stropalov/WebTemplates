@@ -62,7 +62,7 @@ header
 
 .header_menu
 	background-color: #F3F3F3
-	height: 3.7em
+	height: 100%
 	.logo
 		height: 3.7em
 		display: table
@@ -79,6 +79,20 @@ header
 				margin-right: 0.5em
 			&:hover
 				text-decoration: none
+	.show-menu
+		color: #000
+		background: #19c589
+		text-align: center
+		width: 100px
+		height: 40px
+		padding: 10px 0
+		display: none
+		float: right
+	input[type=checkbox]
+		display: none
+		-webkit-appearance: none
+	input[type=checkbox]:checked ~ nav>ul
+		display: block
 	nav
 		height: inherit
 		.main_menu 

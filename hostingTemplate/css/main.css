@@ -56,7 +56,7 @@ header {
 /*========================================================================*/
 .header_menu {
   background-color: #f3f3f3;
-  height: 3.7em;
+  height: 100%;
 }
 .header_menu .logo {
   height: 3.7em;
@@ -77,6 +77,23 @@ header {
 }
 .header_menu .logo a:hover {
   text-decoration: none;
+}
+.header_menu .show-menu {
+  color: #000;
+  background: #19c589;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  padding: 10px 0;
+  display: none;
+  float: right;
+}
+.header_menu input[type=checkbox] {
+  display: none;
+  -webkit-appearance: none;
+}
+.header_menu input[type=checkbox]:checked ~ nav>ul {
+  display: block;
 }
 .header_menu nav {
   height: inherit;

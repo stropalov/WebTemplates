@@ -83,6 +83,28 @@
 	.flexslider .slide_text {
 		top: 30%
 	}
+	.header_menu nav ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	
+	.header_menu li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	
+	.header_menu ul li,
+	.header_menu li a {
+		width: 100%;
+	}
+	.header_menu nav .main_menu > li > a{
+		text-align: center;
+		border-right: none;
+	}
+	.header_menu .show-menu {
+		display: block;
+	}
 }
 /* Extra Small Devices, Phones */
 

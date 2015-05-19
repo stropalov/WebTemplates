@@ -148,7 +148,7 @@ header {
   top: 97%;
 }
 .header_menu nav .main_menu li ul li a:hover,
-.header_menu nav .main_menu li ul:not(:hover) li.active a {
+.header_menu nav .main_menu li ul:not(:hover) li:active a {
   background-color: #fff;
   color: #33353d;
 }
@@ -161,12 +161,11 @@ header {
   border-top: 1px solid #dfdfdf;
   line-height: 2.5em;
   padding: 0 1em;
+  text-decoration: none;
 }
 .header_menu nav .main_menu li:hover ul {
   display: block;
   width: 100%;
-  left: 0;
-  right: 0;
   z-index: 100;
 }
 /*========================================================================*/

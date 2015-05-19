@@ -50,6 +50,10 @@
 	.flexslider .slide_text p {
 		font-size: 15pt;
 	}
+	.header_menu nav .main_menu > li > a {
+		padding: 0 0.5em;
+		font-size: 15pt;
+	}
 }
 /* Small Devices, Tablets */
 
@@ -98,7 +102,13 @@
 	.header_menu li a {
 		width: 100%;
 	}
-	.header_menu nav .main_menu > li > a{
+	.header_menu nav .main_menu li ul {
+		position: relative;
+	}
+	.header_menu nav .main_menu li ul a{
+		text-align: center;	
+	}
+	.header_menu nav .main_menu > li > a {
 		text-align: center;
 		border-right: none;
 		display: inline-block;

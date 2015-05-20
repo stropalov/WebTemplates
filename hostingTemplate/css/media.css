@@ -50,6 +50,9 @@
 		padding: 0 0.5em;
 		font-size: 15pt;
 	}
+	.support {
+		margin-left: 0;
+	}
 }
 /* Small Devices, Tablets */
 

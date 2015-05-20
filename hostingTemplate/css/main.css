@@ -189,7 +189,7 @@ header {
   position: absolute;
   width: 100%;
   text-align: center;
-  top: 50%;
+  top: 40%;
 }
 .flexslider .slide_text h1 {
   font-size: 26pt;
@@ -493,6 +493,9 @@ footer {
   font-weight: bold;
   margin-right: 0.5em;
 }
+.support {
+  margin-left: 1em;
+}
 /*========================================================================*/
 /*	Subscribe block 													  */
 /*========================================================================*/
@@ -541,4 +544,12 @@ footer {
 }
 .copyright {
   font-size: 10pt;
+}
+.copyright a {
+  color: #4f4f4f;
+  font-weight: 500;
+}
+.copyright a:hover {
+  color: #469613;
+  text-decoration: none;
 }

@@ -15,10 +15,6 @@
 		text-align: center;
 		float: none;
 	}
-	.contact_info li,
-	.contact_info li:last-child {
-		border: none;
-	}
 	.plans .plan,
 	.blog_posts .blog_post {
 		width: 60%;
@@ -105,8 +101,8 @@
 	.header_menu nav .main_menu li ul {
 		position: relative;
 	}
-	.header_menu nav .main_menu li ul a{
-		text-align: center;	
+	.header_menu nav .main_menu li ul a {
+		text-align: center;
 	}
 	.header_menu nav .main_menu > li > a {
 		text-align: center;

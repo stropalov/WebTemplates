@@ -10,17 +10,29 @@ body {
   background-color: #fafafa;
   display: block;
 }
+a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
 ul li {
   list-style: none;
 }
+ul li a {
+  color: #4f4f4f;
+}
 ul li a:hover {
-  color: #3c9b27;
+  color: #469613;
+  text-decoration: none;
 }
 /*========================================================================*/
 /*	Header    															  */
 /*========================================================================*/
 header {
-  background-color: #1d1f21;
+  background-color: #cfcfcf;
   color: #fff;
 }
 .contact_info,
@@ -34,8 +46,7 @@ header {
 }
 .contact_info li a,
 .social_links li a {
-  color: #fff;
-  font-size: 9pt;
+  font-size: 10pt;
   line-height: 0.5em;
   letter-spacing: 0.2em;
   padding: 0 0.5em;
@@ -44,12 +55,6 @@ header {
 .contact_info li a .fa,
 .social_links li a .fa {
   margin-right: 0.7em;
-}
-.contact_info li {
-  border-left: 1px solid #323436;
-}
-.contact_info li:last-child {
-  border-right: 1px solid #323436;
 }
 /*========================================================================*/
 /*	Navigation section: 												  */
@@ -120,7 +125,8 @@ header {
   height: inherit;
   color: #33353d;
   padding: 0 1em;
-  font-size: 16pt;
+  font-size: 15pt;
+  font-weight: 300;
   line-height: 2.5em;
   text-align: center;
   border-right: 1px solid #dfdfdf;
@@ -156,9 +162,10 @@ header {
   display: block;
   width: 100%;
   color: #fff;
-  font-size: 14pt;
+  font-size: 13pt;
+  font-weight: 300;
   height: inherit;
-  border-top: 1px solid #dfdfdf;
+  border-top: 1px solid #323436;
   line-height: 2.5em;
   padding: 0 1em;
   text-decoration: none;
@@ -203,7 +210,7 @@ header {
   z-index: 10;
 }
 .flexslider .flex-control-nav li a {
-  background: #3c9b27;
+  background: #469613;
 }
 .flexslider .flex-control-nav li .flex-active {
   background: #24c200;
@@ -244,7 +251,7 @@ header {
 }
 .features .feature_left span i:before,
 .features .feature_right span i:before {
-  background-color: #3c9b27;
+  background-color: #469613;
   border-radius: 100%;
   height: 3.5em;
   width: 3.5em;
@@ -258,6 +265,13 @@ header {
 .features .feature_left h4,
 .features .feature_left p {
   text-align: right;
+  font-family: 'Roboto', sans-serif;
+}
+.features .feature_left h4 {
+  font-weight: 500;
+}
+.features .feature_left p {
+  font-weight: 300;
 }
 .features .feature_left span {
   margin-left: 2em;
@@ -271,7 +285,7 @@ header {
 /*	Plans section														  */
 /*========================================================================*/
 .plans {
-  background-color: #f5f5f5;
+  background-color: #f3f3f3;
   color: #8b8b8b;
   padding: 3em 0;
   font-size: 12pt;
@@ -295,7 +309,7 @@ header {
   font-size: 19pt;
   font-weight: 500;
   line-height: 1.5em;
-  color: #3c9b27;
+  color: #469613;
 }
 .plans .plan .plan_top p {
   font-size: 16pt;
@@ -439,7 +453,7 @@ header {
 .blog_posts .blog_post .post .post_footer i {
   font-family: 'FontAwesome';
   font-size: 9pt;
-  color: #3c9b27;
+  color: #469613;
   margin-right: 0.5em;
 }
 /*========================================================================*/
@@ -469,7 +483,7 @@ footer {
   color: #8b8b8b;
 }
 .footer_widget ul li a:hover {
-  color: #3c9b27;
+  color: #469613;
   text-decoration: none;
 }
 .footer_widget ul li:before {

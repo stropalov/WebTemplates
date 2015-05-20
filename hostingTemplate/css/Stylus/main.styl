@@ -2,11 +2,13 @@ border_dark = #323436
 border_light = #dfdfdf
 bcg_dark = #32353A
 bcg_grey = #F5F5F5
-main_bcg = #1D1F21
-theme_green = #3C9B27
+	
+theme_green = #469613
+main_bcg_dark = #CFCFCF
+main_bcg_light = #f3f3f3
 text_grey = #8b8b8b
-bcg_dark_grey = #f3f3f3
 bcg_light = #FAFAFA
+link_color = #4F4F4F
 /*========================================================================*/
 /*	HTML elements														  */
 /*========================================================================*/
@@ -20,19 +22,31 @@ body
 	background-color: bcg_light
 	display: block
 
+a
+	font-family: 'Roboto', sans-serif
+	font-weight: 300
+
+p
+	font-family: 'Roboto', sans-serif
+	font-weight: 300
+
+	
 
 ul 
 	li 
 		list-style: none
-		a:hover
-			color: theme_green
+		a
+			color: link_color
+			&:hover
+				color: theme_green
+				text-decoration: none
 
 /*========================================================================*/
 /*	Header    															  */
 /*========================================================================*/
 
 header 
-	background-color: main_bcg
+	background-color: main_bcg_dark
 	color: #FFF
 
 .contact_info,
@@ -42,19 +56,13 @@ header
 		padding: 5px
 		display: inline-block
 		a
-			color: #fff
-			font-size: 9pt
+			font-size: 10pt
 			line-height: 0.5em
 			letter-spacing: 0.2em
 			padding: 0 0.5em
 			vertical-align: middle	
 			.fa
 				margin-right: 0.7em
-.contact_info 
-	li
-		border-left: 1px solid border_dark
-		&:last-child 
-			border-right: 1px solid border_dark
 
 /*========================================================================*/
 /*	Navigation section: 												  */
@@ -113,7 +121,8 @@ header
 					height: inherit
 					color: #33353D
 					padding: 0 1em
-					font-size: 16pt
+					font-size: 15pt
+					font-weight: 300
 					line-height: 2.5em
 					text-align: center
 					border-right: 1px solid border_light
@@ -145,9 +154,10 @@ header
 						display: block
 						width: 100%
 						color: #FFF
-						font-size: 14pt
+						font-size: 13pt
+						font-weight: 300
 						height: inherit
-						border-top: 1px solid border_light
+						border-top: 1px solid border_dark
 						line-height: 2.5em
 						padding: 0 1em
 						text-decoration: none
@@ -235,6 +245,11 @@ header
 	.feature_left
 		h4, p
 			text-align: right
+			font-family: 'Roboto', sans-serif
+		h4
+			font-weight: 500
+		p
+			font-weight: 300
 	.feature_left 
 		span 
 			margin-left: 2em
@@ -249,7 +264,7 @@ header
 /*========================================================================*/
 
 .plans 
-	background-color: bcg_grey
+	background-color: main_bcg_light
 	color: text_grey
 	padding: 3em 0
 	font-size: 12pt
@@ -311,7 +326,7 @@ header
 		margin: auto
 		.review
 			.comment
-				background-color: bcg_dark_grey
+				background-color: main_bcg_light
 				padding: 1.5em
 				text-align: justify
 				position: relative
@@ -355,7 +370,7 @@ header
 /*========================================================================*/
 
 .blog_posts 
-	background-color: bcg_dark_grey
+	background-color: main_bcg_light
 	color: text_grey
 	padding: 3em 0
 	font-size: 12pt

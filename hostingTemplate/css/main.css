@@ -25,7 +25,7 @@ ul li a {
   color: #4f4f4f;
 }
 ul li a:hover {
-  color: #469613;
+  color: #7dc01d;
   text-decoration: none;
 }
 /*========================================================================*/
@@ -104,7 +104,7 @@ header {
   display: block;
 }
 .header_menu nav {
-  height: inherit;
+  height: 3.7em;
 }
 .header_menu nav .main_menu {
   height: inherit;
@@ -185,20 +185,26 @@ header {
 .flexslider img {
   position: relative;
 }
-.flexslider .slide_text {
+.flexslider .text_wrap {
   position: absolute;
   width: 100%;
   text-align: center;
   top: 40%;
 }
-.flexslider .slide_text h1 {
+.flexslider .text_wrap .text {
+  background-color: rgba(0,0,0,0.6);
+  width: 65%;
+  margin: auto;
+  padding: 0.5em 1em 1em 1em;
+}
+.flexslider .text_wrap .text h1 {
   font-size: 26pt;
   font-weight: 500;
   line-height: 1.5em;
   margin-bottom: 0.7em;
   color: #fff;
 }
-.flexslider .slide_text p {
+.flexslider .text_wrap .text p {
   font-size: 19pt;
   font-weight: 500;
   color: #000;
@@ -206,14 +212,24 @@ header {
   color: #fff;
 }
 .flexslider .flex-control-nav {
-  bottom: 7%;
+  bottom: 5%;
   z-index: 10;
 }
 .flexslider .flex-control-nav li a {
-  background: #469613;
+  background: #32353a;
 }
 .flexslider .flex-control-nav li .flex-active {
-  background: #24c200;
+  background: #7dc01d;
+}
+.flexslider .flex-direction-nav a.flex-prev:before {
+  font-family: 'FontAwesome';
+  content: '\f053';
+  color: #fff;
+}
+.flexslider .flex-direction-nav a.flex-next:before {
+  font-family: 'FontAwesome';
+  content: '\f054';
+  color: #fff;
 }
 /*========================================================================*/
 /*	Features section													  */
@@ -251,7 +267,7 @@ header {
 }
 .features .feature_left span i:before,
 .features .feature_right span i:before {
-  background-color: #469613;
+  background-color: #7dc01d;
   border-radius: 100%;
   height: 3.5em;
   width: 3.5em;
@@ -309,7 +325,7 @@ header {
   font-size: 19pt;
   font-weight: 500;
   line-height: 1.5em;
-  color: #469613;
+  color: #7dc01d;
 }
 .plans .plan .plan_top p {
   font-size: 16pt;
@@ -453,7 +469,7 @@ header {
 .blog_posts .blog_post .post .post_footer i {
   font-family: 'FontAwesome';
   font-size: 9pt;
-  color: #469613;
+  color: #7dc01d;
   margin-right: 0.5em;
 }
 /*========================================================================*/
@@ -483,7 +499,7 @@ footer {
   color: #8b8b8b;
 }
 .footer_widget ul li a:hover {
-  color: #469613;
+  color: #7dc01d;
   text-decoration: none;
 }
 .footer_widget ul li:before {
@@ -550,6 +566,6 @@ footer {
   font-weight: 500;
 }
 .copyright a:hover {
-  color: #469613;
+  color: #7dc01d;
   text-decoration: none;
 }

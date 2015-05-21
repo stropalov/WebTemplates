@@ -37,13 +37,13 @@
 	.reviews .slides {
 		width: 65%;
 	}
-	.flexslider .slide_text {
+	.flexslider .text_wrap {
 		top: 40%
 	}
-	.flexslider .slide_text h1 {
+	.flexslider .text_wrap .text h1 {
 		font-size: 20pt;
 	}
-	.flexslider .slide_text p {
+	.flexslider .text_wrap .text p {
 		font-size: 15pt;
 	}
 	.header_menu nav .main_menu > li > a {
@@ -83,8 +83,11 @@
 	.reviews .slides .owl-controls {
 		bottom: 21%;
 	}
-	.flexslider .slide_text {
+	.flexslider .text_wrap {
 		top: 30%
+	}
+	.flexslider .text_wrap .text {
+		width: 85%;
 	}
 	.header_menu nav ul {
 		position: static;
@@ -134,13 +137,16 @@
 		right: 4%;
 		bottom: 11%;
 	}
-	.flexslider .slide_text {
-		top: 20%
+	.flexslider .text_wrap {
+		top: 10%;
 	}
-	.flexslider .slide_text h1 {
+	.flexslider .text_wrap .text {
+		width: 95%;
+	}
+	.flexslider .text_wrap .text h1 {
 		font-size: 18pt;
 	}
-	.flexslider .slide_text p {
+	.flexslider .text_wrap .text p {
 		font-size: 12pt;
 	}
 }
@@ -150,6 +156,9 @@
 	.plans .plan,
 	.blog_posts .blog_post {
 		width: 95%;
+	}
+	.flexslider .text_wrap {
+		top: 2%;
 	}
 }
 /*==========  Mobile First Method  ==========*/

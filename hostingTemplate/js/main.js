@@ -12,7 +12,7 @@
 			animation: "fade",
 			animationLoop: true,
 			controlNav: true,
-			directionNav: false,
+			directionNav: true,
 			smoothHeight: true,
 			slideshowSpeed: 7000,
 			animationSpeed: 600,

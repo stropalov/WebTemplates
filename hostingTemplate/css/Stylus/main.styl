@@ -3,7 +3,7 @@ border_light = #dfdfdf
 bcg_dark = #32353A
 bcg_grey = #F5F5F5
 	
-theme_green = #469613
+theme_green = #7dc01d
 main_bcg_dark = #CFCFCF
 main_bcg_light = #f3f3f3
 text_grey = #8b8b8b
@@ -104,7 +104,7 @@ header
 	input[type=checkbox]:checked ~ nav>ul
 		display: block
 	nav
-		height: inherit
+		height: 3.7em
 		.main_menu 
 			height: inherit
 			> li 
@@ -176,32 +176,45 @@ header
 	margin-bottom: 0 !important
 	img 
 		position: relative
-	.slide_text 
+	.text_wrap 
 		position: absolute
 		width: 100%
 		text-align: center
 		top: 40%
-		h1 
-			font-size: 26pt
-			font-weight: 500
-			line-height: 1.5em
-			margin-bottom: 0.7em
-			color: #FFF
-		p 
-			font-size: 19pt
-			font-weight: 500
-			color: #000
-			line-height: 1.1em
-			color: #FFF
+		.text
+			background-color: rgba(0,0,0,0.6)
+			width: 65%
+			margin: auto
+			padding: 0.5em 1em 1em 1em
+			h1 
+				font-size: 26pt
+				font-weight: 500
+				line-height: 1.5em
+				margin-bottom: 0.7em
+				color: #FFF
+			p 
+				font-size: 19pt
+				font-weight: 500
+				color: #000
+				line-height: 1.1em
+				color: #FFF
 	.flex-control-nav
-		bottom: 7%
+		bottom: 5%
 		z-index: 10
 		li 
 			a
-				background: theme_green
+				background: bcg_dark
 			.flex-active
-				background: #24C200
-
+				background: theme_green
+	.flex-direction-nav 
+		a.flex-prev:before 
+			font-family: 'FontAwesome'
+			content: '\f053'
+			color: #fff
+		a.flex-next:before 
+			font-family: 'FontAwesome'
+			content: '\f054'
+			color: #fff
 
 /*========================================================================*/
 /*	Features section													  */

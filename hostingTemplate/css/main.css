@@ -264,9 +264,6 @@ header {
 .features .feature_left span i,
 .features .feature_right span i {
   font-size: 1.1em;
-}
-.features .feature_left span i:before,
-.features .feature_right span i:before {
   background-color: #7dc01d;
   border-radius: 100%;
   height: 3.5em;
@@ -277,6 +274,18 @@ header {
   position: relative;
   text-align: center;
   top: 0;
+  -webkit-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+.features .feature_left span i:hover,
+.features .feature_right span i:hover {
+  background-color: #32353a;
+  -webkit-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 .features .feature_left h4,
 .features .feature_left p {

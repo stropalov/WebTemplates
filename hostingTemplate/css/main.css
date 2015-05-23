@@ -77,7 +77,7 @@ header {
 .header_menu .logo a .fa {
   font-family: 'FontAwesome';
   font-size: 19pt;
-  color: #3c9b27;
+  color: #7dc01d;
   margin-right: 0.5em;
 }
 .header_menu .logo a:hover {
@@ -92,7 +92,7 @@ header {
   font-family: 'FontAwesome';
   content: "\f0c9";
   font-size: 20pt;
-  color: #3c9b27;
+  color: #7dc01d;
   font-weight: bold;
   margin-right: 0.5em;
 }
@@ -137,7 +137,7 @@ header {
   height: 0;
   border: 0.313em solid transparent;
   border-bottom: none;
-  border-top-color: #3c9b27;
+  border-top-color: #7dc01d;
   content: '';
   vertical-align: middle;
   display: inline-block;
@@ -393,7 +393,7 @@ header {
   margin: auto;
 }
 .reviews .slides .review .comment {
-  background-color: #f3f3f3;
+  background-color: #cfcfcf;
   padding: 1.5em;
   text-align: justify;
   position: relative;
@@ -412,7 +412,7 @@ header {
 .reviews .slides .review .comment:after {
   content: "";
   position: absolute;
-  border-top: 7px solid #f3f3f3;
+  border-top: 7px solid #cfcfcf;
   border-left: 7px solid transparent;
   border-bottom: 7px solid transparent;
   border-right: 7px solid transparent;
@@ -435,6 +435,12 @@ header {
   position: absolute;
   right: 2%;
   bottom: 31%;
+}
+.reviews .slides .owl-controls .owl-page span {
+  background: #32353a;
+}
+.reviews .slides .owl-controls .owl-page.active span {
+  background: #7dc01d;
 }
 /*========================================================================*/
 /*	Blog posts section													  */
@@ -482,15 +488,24 @@ header {
   line-height: 1.5em;
   padding-bottom: 1em;
 }
+.blog_posts .blog_post .post .post_footer {
+  height: 1em;
+}
 .blog_posts .blog_post .post .post_footer a {
   font-size: 9pt;
   color: #000;
+}
+.blog_posts .blog_post .post .post_footer a:hover {
+  text-decoration: none;
 }
 .blog_posts .blog_post .post .post_footer i {
   font-family: 'FontAwesome';
   font-size: 9pt;
   color: #7dc01d;
   margin-right: 0.5em;
+}
+.blog_posts .blog_post .post .post_footer i:hover {
+  text-decoration: none;
 }
 /*========================================================================*/
 /*	Footer   															  */
@@ -525,7 +540,7 @@ footer {
 .footer_widget ul li:before {
   font-family: 'FontAwesome';
   content: "\f061";
-  color: #3c9b27;
+  color: #7dc01d;
   font-weight: bold;
   margin-right: 0.5em;
 }
@@ -556,7 +571,7 @@ footer {
   outline: none;
 }
 .email_block input[type="submit"] {
-  background: #3c9b27;
+  background: #7dc01d;
   color: #fff;
   border: medium none;
   border-radius: 0 3px 3px 0;

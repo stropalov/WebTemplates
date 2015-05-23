@@ -31,7 +31,7 @@ $(document).ready(function () {
 
 	$("#owl-example").owlCarousel({
 		autoPlay: 4000,
-		slideSpeed: 800,
+		slideSpeed: 1000,
 		navigation: false,
 		pagination: true,
 		singleItem: true,

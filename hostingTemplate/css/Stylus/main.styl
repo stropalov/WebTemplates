@@ -8,6 +8,7 @@ main_bcg_light = #f3f3f3
 text_grey = #8b8b8b
 bcg_light = #FAFAFA
 link_color = #4F4F4F
+menu_dark = #33353D
 /*========================================================================*/
 /*	HTML elements														  */
 /*========================================================================*/
@@ -66,7 +67,7 @@ header
 /*========================================================================*/
 
 .header_menu
-	background-color: #F3F3F3
+	background-color: main_bcg_light
 	height: 100%
 	.logo
 		height: 3.7em
@@ -74,13 +75,13 @@ header
 		padding-left: 1em
 		a 
 			font-size: 20pt
-			color: #33353D
+			color: menu_dark
 			display: table-cell
 			vertical-align: middle
 			.fa 
 				font-family: 'FontAwesome'
 				font-size: 19pt
-				color: #3C9B27
+				color: theme_green
 				margin-right: 0.5em
 			&:hover
 				text-decoration: none
@@ -92,7 +93,7 @@ header
 			font-family: 'FontAwesome'
 			content: "\f0c9"
 			font-size: 20pt
-			color: #3C9B27
+			color: theme_green
 			font-weight: bold
 			margin-right: 0.5em
 	input[type=checkbox]
@@ -116,7 +117,7 @@ header
 				> a 
 					display: table-cell
 					height: inherit
-					color: #33353D
+					color: menu_dark
 					padding: 0 1em
 					font-size: 15pt
 					font-weight: 300
@@ -129,7 +130,7 @@ header
 						height: 0
 						border: 0.313em solid transparent
 						border-bottom: none
-						border-top-color: #3C9B27
+						border-top-color: theme_green
 						content: ''
 						vertical-align: middle
 						display: inline-block
@@ -146,7 +147,7 @@ header
 					li a:hover
 					&:not(:hover) li:active a
 						background-color: #FFF
-						color: #33353D
+						color: menu_dark
 					a 	
 						display: block
 						width: 100%
@@ -355,7 +356,7 @@ header
 		margin: auto
 		.review
 			.comment
-				background-color: main_bcg_light
+				background-color: main_bcg_dark
 				padding: 1.5em
 				text-align: justify
 				position: relative
@@ -371,7 +372,7 @@ header
 				&:after
 					content: ""
 					position: absolute
-					border-top: 7px solid #f3f3f3
+					border-top: 7px solid main_bcg_dark
 					border-left: 7px solid transparent
 					border-bottom: 7px solid transparent
 					border-right: 7px solid transparent
@@ -390,6 +391,12 @@ header
 			position: absolute
 			right: 2%
 			bottom: 31%
+			.owl-page
+				span
+					background: bcg_dark
+			.owl-page.active
+				span
+					background: theme_green
 				
 			
 	
@@ -433,14 +440,19 @@ header
 				line-height: 1.5em
 				padding-bottom: 1em
 			.post_footer 
+				height: 1em
 				a 
 					font-size: 9pt
 					color: #000
+					&:hover
+						text-decoration: none
 				i 
 					font-family: 'FontAwesome'
 					font-size: 9pt
 					color: theme_green
 					margin-right: 0.5em
+					&:hover
+						text-decoration: none
 
 /*========================================================================*/
 /*	Footer   															  */
@@ -473,7 +485,7 @@ footer
 			&:before 
 				font-family: 'FontAwesome'
 				content: "\f061"
-				color: #3C9B27
+				color: theme_green
 				font-weight: bold
 				margin-right: 0.5em
 .support
@@ -500,7 +512,7 @@ footer
 		width: 100%
 		outline: none
 	input[type="submit"] 
-		background: #3C9B27
+		background: theme_green
 		color: #fff
 		border: medium none
 		border-radius: 0 3px 3px 0

@@ -23,7 +23,7 @@ ul li a {
   color: #4f4f4f;
 }
 ul li a:hover {
-  color: #7dc01d;
+  color: #6ca619;
   text-decoration: none;
 }
 /*========================================================================*/
@@ -45,6 +45,7 @@ header {
 .contact_info li a,
 .social_links li a {
   font-size: 10pt;
+  font-weight: 700;
   line-height: 0.5em;
   letter-spacing: 0.2em;
   padding: 0 0.5em;
@@ -60,6 +61,8 @@ header {
 .header_menu {
   background-color: #f3f3f3;
   height: 100%;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,0.2);
 }
 .header_menu .logo {
   height: 3.6em;
@@ -172,6 +175,17 @@ header {
   display: block;
   width: 100%;
   z-index: 100;
+}
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 9999;
+}
+.relative-header {
+  position: relative;
 }
 /*========================================================================*/
 /*	Slider section: ;													  */

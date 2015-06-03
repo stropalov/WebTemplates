@@ -3,6 +3,7 @@ border_light = #dfdfdf
 bcg_dark = #32353A
 bcg_grey = #F5F5F5
 theme_green = #7dc01d
+theme_green_dark = #6CA619
 main_bcg_dark = #CFCFCF
 main_bcg_light = #f3f3f3
 text_grey = #8b8b8b
@@ -34,7 +35,7 @@ ul
 		a
 			color: link_color
 			&:hover
-				color: theme_green
+				color: theme_green_dark
 				text-decoration: none
 
 /*========================================================================*/
@@ -53,6 +54,7 @@ header
 		display: inline-block
 		a
 			font-size: 10pt
+			font-weight: 700
 			line-height: 0.5em
 			letter-spacing: 0.2em
 			padding: 0 0.5em
@@ -67,6 +69,8 @@ header
 .header_menu
 	background-color: main_bcg_light
 	height: 100%
+	box-shadow: 0 2px 2px -1px rgba(0,0,0,.2)
+	-webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.2)
 	.logo
 		height: 3.6em
 		display: table
@@ -162,6 +166,17 @@ header
 					width: 100%
 					z-index: 100
 
+.fixed-header
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: auto
+	z-index: 9999
+
+.relative-header
+	position: relative
+	
 /*========================================================================*/
 /*	Slider section: ;													  */
 /*========================================================================*/
